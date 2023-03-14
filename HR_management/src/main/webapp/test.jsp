@@ -7,23 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<div>test Box</div>
-<div>test Box_2</div>
-<div>test Box_2</div>
-<div>test Box_2</div>
-<div>test Box_2</div>
-<div>test Box_2</div>
-<div>test Box_2</div>
-<div>test Box_2</div>
-<div>test Box_2</div>
-<div>test Box_2</div>
-<div>test Box_2</div>
-<div>test Box_2</div>
-<div>test Box_2</div>
-<div>test Box_2</div>
-<div>test Box_2</div>
-<div>test Box_2</div>
-<div>test Box_2</div>
-<div>test Box_2</div>
+
 </body>
 </html>
