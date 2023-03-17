@@ -16,6 +16,6 @@ public class Admin_main_list_Controller implements Controller {
 
 
 
-		return "admin_main_list";
+		return "/admin_page/admin_main_list";
 	}
 }

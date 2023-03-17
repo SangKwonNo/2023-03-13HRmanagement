@@ -17,10 +17,7 @@
 	<div class="container">
 		<div class="main">
 
-			<!-- 좌측아이콘 시작 -->
-			<jsp:include page="./icon_bar.jsp" />
-			<!-- 좌측아이콘 끝 -->
-
+			
 			<!-- 왼쪽메인화면 시작 -->
 			<div class="left-container"></div>
 			<!-- 왼쪽메인화면 끝 -->
@@ -34,11 +31,11 @@
 						<p>로그인</p>
 					</div>
 					<div class="login-bar">
-						<form class="form" action="#">
+						<form class="form" action="${ctx}/employee_main.do?start=1">
 							<p>아이디</p>
-							<input type="text">
+							<input type="text" name="id">
 							<p>비밀번호</p>
-							<input type="password">
+							<input type="password" name="pw">
 							<div class="buttonbox">
 								<button onclick="">로그인</button>
 							</div>

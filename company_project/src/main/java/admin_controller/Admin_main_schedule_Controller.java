@@ -16,6 +16,6 @@ public class Admin_main_schedule_Controller implements Controller {
 
 
 
-		return "admin_main_schedule";
+		return "/admin_page/admin_main_schedule";
 	}
 }

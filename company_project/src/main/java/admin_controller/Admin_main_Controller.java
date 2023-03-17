@@ -13,9 +13,9 @@ public class Admin_main_Controller implements Controller {
 	public String requestHandler(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		System.out.println("-- Admin_main_Controller --"); // 에러 or 현재접근 위치 확인용 콘솔
+		
 
 
-
-		return "admin_main";
+		return "/admin_page/admin_main";
 	}
 }

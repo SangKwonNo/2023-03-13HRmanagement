@@ -13,7 +13,7 @@ public class Employee_main_Controller implements Controller{
 	@Override
 	public String requestHandler(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		return null;
+		return "/employee_page/employee_main";
 	}
 
 }
