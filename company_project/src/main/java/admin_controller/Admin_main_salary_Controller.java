@@ -1,4 +1,4 @@
-package controller;
+package admin_controller;
 
 import java.io.IOException;
 
@@ -7,15 +7,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-public class Admin_main_calendar_Controller implements _Controller {
+public class Admin_main_salary_Controller implements Controller {
 
 	@Override
 	public String requestHandler(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		System.out.println("-- Admin_main_calendar_Controller --"); // 에러 or 현재접근 위치 확인용 콘솔
+		System.out.println("-- Admin_main_salary_Controller --"); // 에러 or 현재접근 위치 확인용 콘솔
 
 
 
-		return "admin_main_calendar";
+		return "admin_main_salary";
 	}
 }
