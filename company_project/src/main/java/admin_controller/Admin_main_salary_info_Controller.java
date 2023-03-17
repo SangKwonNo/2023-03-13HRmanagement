@@ -16,6 +16,6 @@ public class Admin_main_salary_info_Controller implements Controller {
 
 
 
-		return "admin_main_salary_info";
+		return "/admin_page/admin_main_salary_info";
 	}
 }

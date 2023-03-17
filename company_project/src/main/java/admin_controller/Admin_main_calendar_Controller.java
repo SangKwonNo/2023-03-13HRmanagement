@@ -16,6 +16,6 @@ public class Admin_main_calendar_Controller implements Controller {
 
 
 
-		return "admin_main_calendar";
+		return "/admin_page/admin_main_calendar";
 	}
 }

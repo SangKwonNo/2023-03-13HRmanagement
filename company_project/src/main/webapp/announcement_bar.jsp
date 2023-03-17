@@ -1,6 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
+<!-- 공지사항 시작 -->
+<div class="board-title">
+	<div class="board-img">
+		<img src="https://cdn-icons-png.flaticon.com/512/568/568297.png"
+			alt="">
+	</div>
+	<div class="board-name">공지사항</div>
+</div>
 <div class="board-content">
 
 	<!-- < 공지 구현 방식 >
@@ -32,3 +41,4 @@
 	<div class="line"></div>
 
 </div>
+<!-- 공지사항 끝 -->
