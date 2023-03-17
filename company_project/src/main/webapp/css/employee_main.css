@@ -1,1 +1,213 @@
 @charset "UTF-8";
+
+.left-container {
+	display: flex;
+	flex-flow: nowrap column;
+	background: rgba(255, 255, 255, 0.808);
+}
+
+.info1 {
+	width: 100%;
+	height: 40%;
+	display: flex;
+	flex-flow: nowrap column;
+}
+
+.info2 {
+	width: 100%;
+	height: 60%;
+	display: flex;
+	flex-flow: nowrap column;
+}
+
+.board-title {
+	width: 100%;
+	height: 15%;
+	display: flex;
+	font-weight: 800;
+	margin-top: 5px;
+}
+
+.board-img {
+	width: 70px;
+	height: 40px;
+	display: flex;
+	margin-right: 10px;
+	background-size: cover;
+	justify-content: end;
+	align-items: center;
+}
+
+.board-img img {
+	width: 50%;
+	height: 80%;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+.board-name {
+	width: 30%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	border-radius: 20px;
+	border: 2px solid rgba(0, 0, 0, 0.253);
+	background: rgba(255, 255, 255, 0.808);
+}
+
+.board-content {
+	width: 100%;
+	height: 75%;
+	display: flex;
+	flex-flow: column;
+	margin-top: auto;
+	justify-content: space-evenly;
+}
+
+.board-content .con {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.write {
+	width: 85%;
+	margin: 8px auto;
+	border-radius: 5px;
+	border-bottom: 1px solid #aaa;
+}
+
+a {
+	text-decoration: none;
+	font-style: none;
+	list-style: none;
+}
+
+.note {
+	width: 100%;
+	height: 50%;
+}
+
+.schedule {
+	width: 100%;
+	height: 50%;
+}
+
+.schedule-title {
+	width: 100%;
+	height: 15%;
+	display: flex;
+	font-weight: 800;
+	margin-top: 5px;
+}
+
+.schedule-img {
+	width: 70px;
+	height: 40px;
+	display: flex;
+	margin-right: 10px;
+	background-size: cover;
+	justify-content: end;
+	align-items: center;
+}
+
+.schedule-img img {
+	width: 40px;
+	height: 30px;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+.schedule-name {
+	margin-top: 4px;
+	width: 135px;
+	height: 36px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	border-radius: 15px;
+	border: 2px solid rgba(0, 0, 0, 0.253);
+	background: rgba(255, 255, 255, 0.808);
+}
+
+.schedule-content {
+	width: 100%;
+	height: 85%;
+	padding: 20px 10px 20px 10px;
+}
+
+.week {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow: nowrap row;
+	justify-content: space-between;
+}
+
+.week div {
+	width: 20%;
+	list-style: none;
+	border-radius: 15px;
+	margin-left: 2px;
+	margin-right: 2px;
+	border: 2px solid rgba(0, 0, 0, 0.253);
+	background: rgba(255, 255, 255, 0.808);
+}
+
+.note-content {
+	width: 100%;
+	height: 85%;
+	padding: 20px 10px 20px 10px;
+}
+
+.note-title {
+	width: 100%;
+	height: 15%;
+	display: flex;
+	font-size: 25px;
+	font-weight: 800;
+}
+
+.note-name {
+	margin-top: 4px;
+	width: 135px;
+	height: 36px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	border-radius: 15px;
+	border: 2px solid rgba(0, 0, 0, 0.253);
+	background: rgba(255, 255, 255, 0.808);
+}
+
+.note-img {
+	width: 70px;
+	height: 40px;
+	display: flex;
+	margin-right: 10px;
+	background-size: cover;
+	justify-content: end;
+	align-items: center;
+}
+
+.note-img img {
+	width: 35px;
+	height: 30px;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+.note-write {
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	background: rgba(255, 255, 255, 0.808);
+	border: 2px solid rgba(0, 0, 0, 0.253);
+}
