@@ -8,11 +8,13 @@ import javax.servlet.http.HttpServletResponse;
 
 import admin_controller.Controller;
 
-public class Employee_main_list_Controller implements Controller{
+public class Employee_main_list_Controller implements Controller {
 
 	@Override
 	public String requestHandler(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		System.out.println("-- Employee_main_list_Controller --"); // 에러 or 현재접근 위치 확인용 콘솔
+
 		return "/employee_page/employee_main_list";
 	}
 

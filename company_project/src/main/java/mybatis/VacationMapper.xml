@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.vacation">
+  <resultMap id="vacation" type="hrmanagement.vo.vacation">
+  <id property="num" column="num" />
+  <result property="em_num" column="em_num" />
+  <result property="vacation_type" column="vacation_type" />
+  <result property="vac_start" column="vac_start" />
+  <result property="vac_end" column="vac_end" />
+  <result property="memo" column="memo" />
+</resultMap>
+
+
+</mapper>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.department">
+  <resultMap id="department" type="hrmanagement.vo.department">
+  <id property="num" column="num" />
+  <result property="de_code" column="de_code" />
+  <result property="de_name" column="de_name" />
+</resultMap>
+
+
+</mapper>

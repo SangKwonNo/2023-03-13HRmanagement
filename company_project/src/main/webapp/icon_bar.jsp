@@ -5,6 +5,7 @@
 <!DOCTYPE html>
 <div class="icon">
 	<ul class="first-list">
+
 		<c:if test="${session.getAtrribute('id') eq 'admin'}">
 			<div class="first-icon" role="" title="정보확인 및 수정" onclick=""></div>
 			<div class="second-icon" role="img" title="메인화면" onclick="location.href='${ctx}/admin_main.do'"></div>
@@ -28,5 +29,6 @@
 			}
 		</script>
 		
+
 	</ul>
 </div>
