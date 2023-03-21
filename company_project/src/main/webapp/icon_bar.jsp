@@ -11,7 +11,7 @@
 			<div class="second-icon" role="img" title="메인화면" onclick="location.href='${ctx}/admin_main.do'"></div>
 			<div class="third-icon" role="img" title="회원리스트" onclick="location.href='${ctx}/admin_main_list.do'"></div>
 			<div class="fourth-icon" role="img" title="업무 및 근태" onclick="location.href='${ctx}/admin_main_schedule.do'"></div>
-			<div class="fifth-icon" role="img" title="급여확인" onclick="location.href='${ctx}//admin_main_salary.do'"></div>
+			<div class="fifth-icon" role="img" title="급여확인" onclick="location.href='${ctx}/admin_main_salary.do'"></div>
 			<div class="last-icon" role="img" title="로그아웃" onclick="logout()"></div>
 		</c:if>
 		<c:if test="${session.getAtrribute('id') ne 'admin'}">

@@ -18,7 +18,7 @@ public class Login_Check_Controller implements Controller {
 
 		String id = request.getParameter("id");
 		String pw = request.getParameter("pw");
-		System.out.println("- getParameter id : "+id + " / pw : "+pw);
+		System.out.println("- getParameter id : " + id + " / pw : " + pw);
 
 		employeeDAO dao = employeeDAO.getInstance();
 		employee vo = new employee();
@@ -33,18 +33,14 @@ public class Login_Check_Controller implements Controller {
 		if (emp_id != null) {
 			session.setAttribute("loginNum", em_num);
 			response.getWriter().print("employee");
-			System.out.println("employee- getParameter id : "+id + " / pw : "+pw);
-
 		} else if (id.equals("admin")) {
 			session.setAttribute("loginNum", "0000");
 			response.getWriter().print("admin");
-			System.out.println("admin- getParameter id : "+id + " / pw : "+pw);
-
 		} else {
 			response.getWriter().print("null");
-			System.out.println("null- getParameter id : "+id + " / pw : "+pw);
-			
 		}
+		System.out.println("null- getParameter id : " + id + " / pw : " + pw + " / em_num : " + em_num);
+		System.out.println("sessin(loginNum) : " + session.getAttribute("loginNum"));
 
 		return null;
 	}

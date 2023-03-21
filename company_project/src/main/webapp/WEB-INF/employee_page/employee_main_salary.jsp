@@ -7,6 +7,9 @@
 <head>
 <meta charset="UTF-8">
 <title>사원 비밀번호 재확인</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="${ctx}/script/salary.js" defer></script>
+
 <link rel="stylesheet" href="${ctx}/css/index.css">
 <link rel="stylesheet" href="${ctx}/css/employee_main_salary.css">
 </head>
@@ -26,7 +29,7 @@
 						<p>비밀번호 재확인</p>
 					</div>
 					<input type="password" id="pw" name="pw">
-					<button onclick="">입력</button>
+					<button onclick="pwCheck()">입력</button>
 				</div>
 			</div>
 			<!-- 급여확인 전 비밀번호 입력 페이지 끝 -->
