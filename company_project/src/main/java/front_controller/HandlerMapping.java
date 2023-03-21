@@ -10,6 +10,7 @@ import admin_controller.Admin_main_salary_Controller;
 import admin_controller.Admin_main_salary_info_Controller;
 import admin_controller.Admin_main_schedule_Controller;
 import admin_controller.Controller;
+import admin_controller.Login_Check_Controller;
 import employee_controller.Employee_main_Controller;
 import employee_controller.Employee_main_board_Controller;
 import employee_controller.Employee_main_calendar_Controller;
@@ -24,6 +25,8 @@ public class HandlerMapping {
 
 	public HandlerMapping() {
 		mappings = new HashMap<String, Controller>();
+		mappings.put("/login_check.do", new Login_Check_Controller());
+		
 		mappings.put("/employee_main_board.do", new Employee_main_board_Controller());
 		mappings.put("/employee_main_calendar.do", new Employee_main_calendar_Controller());
 		mappings.put("/employee_main_list.do", new Employee_main_list_Controller());

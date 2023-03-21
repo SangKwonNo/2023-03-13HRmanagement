@@ -9,6 +9,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>로그인</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="${ctx}/script/main.js" defer></script>
 <link rel="stylesheet" href="${ctx}/css/index.css">
 <link rel="stylesheet" href="${ctx}/css/main.css">
 </head>
@@ -34,15 +36,15 @@
 						<p>로그인</p>
 					</div>
 					<div class="login-bar">
-						<form class="form" action="#">
-							<p>아이디</p>
-							<input type="text">
-							<p>비밀번호</p>
-							<input type="password">
-							<div class="buttonbox">
-								<button onclick="">로그인</button>
-							</div>
-						</form>
+
+						<p>아이디</p>
+						<input type="text" id="id" name="id">
+						<p>비밀번호</p>
+						<input type="password" id="pw" name="pw">
+						<div class="buttonbox">
+							<button onclick="idCheck()">로그인</button>
+						</div>
+
 					</div>
 				</div>
 				<!-- 로그인 창 끝 -->
@@ -53,6 +55,7 @@
 		</div>
 		<div class="footer"></div>
 	</div>
+
 	<footer> </footer>
 </body>
 

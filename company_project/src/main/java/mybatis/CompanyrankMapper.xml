@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.companyrank">
+  <resultMap id="companyrank" type="hrmanagement.vo.companyrank">
+  <id property="num" column="num" />
+  <result property="rn_code" column="rn_code" />
+  <result property="rn_name" column="rn_name" />
+  <result property="basic_salary" column="basic_salary" />
+</resultMap>
+
+
+</mapper>

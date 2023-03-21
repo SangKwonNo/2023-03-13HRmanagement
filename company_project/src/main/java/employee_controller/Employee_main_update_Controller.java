@@ -13,7 +13,11 @@ public class Employee_main_update_Controller implements Controller{
 	@Override
 	public String requestHandler(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		return null;
+		System.out.println("-- Employee_main_update_Controller --"); // 에러 or 현재접근 위치 확인용 콘솔
+
+
+
+		return "employee_main_update";
 	}
 
 }

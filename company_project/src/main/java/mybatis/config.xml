@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+  <properties resource="mybatis/db.properties"/> 
+  <typeAliases>
+	  <typeAlias type="hrmanagement.vo.department" alias="department"/> 
+      <typeAlias type="hrmanagement.vo.companyrank" alias="companyrank"/> 
+      <typeAlias type="hrmanagement.vo.job" alias="job"/> 
+      <typeAlias type="hrmanagement.vo.employee" alias="employee"/> 
+      <typeAlias type="hrmanagement.vo.attendance" alias="attendance"/> 
+      <typeAlias type="hrmanagement.vo.salary_info" alias="salary_info"/> 
+      <typeAlias type="hrmanagement.vo.vacation" alias="vacation"/> 
+      <typeAlias type="hrmanagement.vo.board_01" alias="board_01"/> 
+       
+     <!--  <typeAlias type="hrmanagement.vo.calender" alias="calender"/>  -->
+       
+  </typeAliases> 
+  
+  <environments default="development">
+    <environment id="development">
+      <transactionManager type="JDBC"/>
+      <dataSource type="POOLED">
+        <property name="driver" value="${driver}"/>
+        <property name="url" value="${url}"/>
+        <property name="username" value="${username}"/>
+        <property name="password" value="${password}"/>
+      </dataSource>
+    </environment>
+  </environments>
+
+  <mappers>
+     <mapper resource="mybatis/DepartmentMapper.xml"/>
+    <mapper resource="mybatis/CompanyrankMapper.xml"/>
+    <mapper resource="mybatis/JobMapper.xml"/>
+    <mapper resource="mybatis/EmployeeMapper.xml"/>
+    <mapper resource="mybatis/AttendanceMapper.xml"/>
+    <mapper resource="mybatis/Salary_infoMapper.xml"/>
+    <mapper resource="mybatis/VacationMapper.xml"/>
+    <mapper resource="mybatis/Board_01Mapper.xml"/>
+
+   <!--  <mapper resource="mybatis/calender.xml"/> -->
+    
+  </mappers>
+</configuration>

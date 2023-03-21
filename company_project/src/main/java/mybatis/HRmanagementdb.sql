@@ -90,4 +90,9 @@ CREATE TABLE board_01( -- 게시판종류 기본 베이스
 	regDate varchar(10) -- 글작성일
 );
 
-
+CREATE TABLE Calender( -- 캘린더
+	num int auto_increment PRIMARY key,
+	title varchar(20),
+    start varchar(20),
+    end varchar(20)
+);
