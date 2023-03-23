@@ -15,18 +15,18 @@ public class employeeDAO {
 
 	}
 	
-	public int pw(String id) {
+	public int getNum(String id) {
 		   SqlSession session= MybatisConfig.getInstance().openSession(true);
-		   String employeePw = session.selectOne("mapper.employee.employeePw", em_num);
+		   int loginNum = session.selectOne("mapper.employee.employeeNum", id);
 		   session.close();
-		   return employeePw;  
+		   return loginNum;  
 	}
 
 	public String Login(employee employee) {
 		   SqlSession session= MybatisConfig.getInstance().openSession(true);
-		   String employeeId=session.selectOne("mapper.employee.employeeLogin", employee);
+		   String loginId=session.selectOne("mapper.employee.employeeLogin", employee);
 		   session.close();
-		   return employeeId;  
+		   return loginId;  
 	}
 	
 	public String pw(int em_num) {
