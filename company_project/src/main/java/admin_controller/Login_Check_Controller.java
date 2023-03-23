@@ -25,12 +25,19 @@ public class Login_Check_Controller implements Controller {
 		vo.setId(id);
 		vo.setPw(pw);
 
-		String emp_id = dao.Login(vo); // 값이 없으면 null 리턴함
-		int em_num = dao.getNum(emp_id);
-		System.out.println("loginId : " + emp_id + " / em_num : " + em_num);
-
+		Employee loginEmployee = dao.loginTest(vo); // 값이 없으면 null 리턴함
+		System.out.println("loginEmployee : " + loginEmployee);
+		String login_id = null;
+		int em_num = 0;
+		if (loginEmployee != null) {
+			em_num = loginEmployee.getEm_num();
+			login_id = loginEmployee.getId();
+			System.out.println("loginEmployee : " + loginEmployee + " / em_num : " + em_num);
+		}
+		
 		HttpSession session = request.getSession();
-		if (emp_id != null) {
+		if (login_id != null) {
+			session.setAttribute("loginEmployee", loginEmployee);
 			session.setAttribute("loginNum", em_num);
 			response.getWriter().print("employee");
 		} else if (id.equals("admin")) {
@@ -39,6 +46,7 @@ public class Login_Check_Controller implements Controller {
 		} else {
 			response.getWriter().print("null");
 		}
+		
 		System.out.println("null- getParameter id : " + id + " / pw : " + pw + " / em_num : " + em_num);
 		System.out.println("sessin(loginNum) : " + session.getAttribute("loginNum"));
 

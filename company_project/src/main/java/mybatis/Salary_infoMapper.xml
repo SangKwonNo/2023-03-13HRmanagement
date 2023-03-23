@@ -3,13 +3,19 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="mapper.salary_info">
-  <resultMap id="salary_info" type="hrmanagement.vo.Salary_info">
-  <id property="num" column="num" />
-  <result property="em_num" column="em_num" />
-  <result property="basic_salary" column="basic_salary" />
-  <result property="bonus" column="bonus" />
-  <result property="allowance" column="allowance" />
-</resultMap>
+	<resultMap id="salary_info"
+		type="hrmanagement.vo.Salary_info">
+		<id property="num" column="num" />
+		<result property="em_num" column="em_num" />
+		<result property="basic_salary" column="basic_salary" />
+		<result property="bonus" column="bonus" />
+		<result property="allowance" column="allowance" />
+	</resultMap>
+
+	<select id="salaryRank" parameterType="Integer"
+		resultType="salary_info">
+		select * from employee where em_num=#{em_num}
+	</select>
 
 
 </mapper>

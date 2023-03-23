@@ -4,28 +4,33 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="mapper.employee">
 
-  <resultMap id="employee" type="hrmanagement.vo.Employee">
-  <id property="num" column="num" />
-  <result property="name" column="name" />
-  <result property="birth" column="birth" />
-  <result property="gender" column="gender" />
-  <result property="addr" column="addr" />
-  <result property="phone" column="phone" />
-  <result property="email" column="email" />
-  <result property="id" column="id" />
-  <result property="pw" column="pw" />
-  <result property="em_num" column="em_num" />
-  <result property="em_de_name" column="em_de_name" />
-  <result property="em_rn_name" column="em_rn_name" />
-  <result property="em_job_name" column="em_job_name" />
-  <result property="em_entry" column="em_entry" />
-  <result property="va_total" column="va_total" />
-  <result property="va_use" column="va_use" />
-</resultMap>
+	<resultMap id="employee" type="hrmanagement.vo.Employee">
+		<id property="num" column="num" />
+		<result property="name" column="name" />
+		<result property="birth" column="birth" />
+		<result property="gender" column="gender" />
+		<result property="addr" column="addr" />
+		<result property="phone" column="phone" />
+		<result property="email" column="email" />
+		<result property="id" column="id" />
+		<result property="pw" column="pw" />
+		<result property="em_num" column="em_num" />
+		<result property="em_de_name" column="em_de_name" />
+		<result property="em_rn_name" column="em_rn_name" />
+		<result property="em_job_name" column="em_job_name" />
+		<result property="em_entry" column="em_entry" />
+		<result property="va_total" column="va_total" />
+		<result property="va_use" column="va_use" />
+	</resultMap>
 
 	<select id="employeeNum" parameterType="employee"
 		resultType="Integer">
 		select em_num from employee where id=#{id}
+	</select>
+
+	<select id="employeeLoginTest" parameterType="employee"
+		resultType="employee">
+		select * from employee where id=#{id}
 	</select>
 
 	<select id="employeeLogin" parameterType="employee"
