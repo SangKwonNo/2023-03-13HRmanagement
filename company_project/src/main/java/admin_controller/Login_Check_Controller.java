@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import hrmanagement.vo.employee;
+import hrmanagement.vo.Employee;
 import model.employeeDAO;
 
 public class Login_Check_Controller implements Controller {
@@ -21,7 +21,7 @@ public class Login_Check_Controller implements Controller {
 		System.out.println("- getParameter id : " + id + " / pw : " + pw);
 
 		employeeDAO dao = employeeDAO.getInstance();
-		employee vo = new employee();
+		Employee vo = new Employee();
 		vo.setId(id);
 		vo.setPw(pw);
 

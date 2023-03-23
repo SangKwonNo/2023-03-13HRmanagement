@@ -1,6 +1,6 @@
 package hrmanagement.vo;
 
-public class calender {
+public class Calender {
 	private int num;
 	private String title;
 	private String start;

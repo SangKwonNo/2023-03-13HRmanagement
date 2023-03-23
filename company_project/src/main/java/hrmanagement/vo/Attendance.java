@@ -1,6 +1,6 @@
 package hrmanagement.vo;
 
-public class attendance {
+public class Attendance {
 	private int num;
 	private int em_num;
 	private String check_in;

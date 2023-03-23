@@ -1,6 +1,6 @@
 package hrmanagement.vo;
 
-public class job {
+public class Job {
 	private int num;
 	private int job_code;
 	private String work;

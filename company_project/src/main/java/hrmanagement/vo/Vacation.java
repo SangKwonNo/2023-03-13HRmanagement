@@ -1,6 +1,6 @@
 package hrmanagement.vo;
 
-public class vacation {
+public class Vacation {
 	private int num;
 	private int em_num;
 	private String vacation_type;

@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="mapper.salary_info">
-  <resultMap id="salary_info" type="hrmanagement.vo.salary_info">
+  <resultMap id="salary_info" type="hrmanagement.vo.Salary_info">
   <id property="num" column="num" />
   <result property="em_num" column="em_num" />
   <result property="basic_salary" column="basic_salary" />

@@ -2,7 +2,7 @@ package model;
 
 import org.apache.ibatis.session.SqlSession;
 import hrmanagement.MybatisConfig;
-import hrmanagement.vo.department;
+import hrmanagement.vo.Department;
 
 public class departmentDAO {
 	private departmentDAO() {

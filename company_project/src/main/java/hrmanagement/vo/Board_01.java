@@ -1,6 +1,6 @@
 package hrmanagement.vo;
 
-public class board_01 {
+public class Board_01 {
 	private int num;
 	private String type;
 	private String writer;
