@@ -19,7 +19,6 @@ import employee_controller.Employee_main_salary_Controller;
 import employee_controller.Employee_main_salary_info_Controller;
 import employee_controller.Employee_main_schedule_Controller;
 import employee_controller.Employee_main_update_Controller;
-import total_controller.LoginController;
 import total_controller.LogoutController;
 import total_controller.MainController;
 
@@ -47,7 +46,6 @@ public class HandlerMapping {
 		mappings.put("/admin_main_schedule.do", new Admin_main_schedule_Controller());
 		mappings.put("/admin_main.do", new Admin_main_Controller());
 		
-		mappings.put("/login.do", new LoginController());
 		mappings.put("/logout.do", new LogoutController());
 		mappings.put("/main.do", new MainController());
 	}

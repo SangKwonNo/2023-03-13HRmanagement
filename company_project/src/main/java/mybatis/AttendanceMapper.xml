@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="mapper.attendance">
-  <resultMap id="attendance" type="hrmanagement.vo.attendance">
+  <resultMap id="attendance" type="hrmanagement.vo.Attendance">
   <id property="num" column="num" />
   <result property="em_num" column="em_num" />
   <result property="check_in" column="check_in" />

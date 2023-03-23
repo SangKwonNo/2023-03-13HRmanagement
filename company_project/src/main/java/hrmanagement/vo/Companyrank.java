@@ -1,6 +1,6 @@
 package hrmanagement.vo;
 
-public class companyrank {
+public class Companyrank {
 	private int num;
 	private int rn_code;
 	private String rn_name;

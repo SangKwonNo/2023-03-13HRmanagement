@@ -1,6 +1,6 @@
 package hrmanagement.vo;
 
-public class salary_info {
+public class Salary_info {
 	private int num;
 	private int em_num;
 	private int basic_salary;

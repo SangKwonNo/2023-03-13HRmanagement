@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="mapper.employee">
-  <resultMap id="employee" type="hrmanagement.vo.employee">
+  <resultMap id="employee" type="hrmanagement.vo.Employee">
   <id property="num" column="num" />
   <result property="name" column="name" />
   <result property="birth" column="birth" />

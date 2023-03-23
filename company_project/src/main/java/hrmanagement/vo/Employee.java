@@ -1,6 +1,6 @@
 package hrmanagement.vo;
 
-public class employee {
+public class Employee {
 	private int num;
 	private String name;
 	private String birth;

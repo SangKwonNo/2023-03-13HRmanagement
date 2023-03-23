@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="mapper.vacation">
-  <resultMap id="vacation" type="hrmanagement.vo.vacation">
+  <resultMap id="vacation" type="hrmanagement.vo.Vacation">
   <id property="num" column="num" />
   <result property="em_num" column="em_num" />
   <result property="vacation_type" column="vacation_type" />

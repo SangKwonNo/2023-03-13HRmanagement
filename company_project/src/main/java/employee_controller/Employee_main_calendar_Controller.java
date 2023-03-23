@@ -15,7 +15,5 @@ public class Employee_main_calendar_Controller implements Controller {
 			throws ServletException, IOException {
 		return "/employee_page/employee_main_calendar";
 
-
-
-
+	}
 }

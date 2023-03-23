@@ -2,7 +2,7 @@ package model;
 
 import org.apache.ibatis.session.SqlSession;
 import hrmanagement.MybatisConfig;
-import hrmanagement.vo.employee;
+import hrmanagement.vo.Employee;
 
 public class employeeDAO {
 	private employeeDAO() {
@@ -15,7 +15,7 @@ public class employeeDAO {
 
 	}
 
-	public String Login(employee employee) {
+	public String Login(Employee employee) {
 		   SqlSession session= MybatisConfig.getInstance().openSession(true);
 		   String employeeId=session.selectOne("mapper.employee.employeeLogin", employee);
 		   session.close();

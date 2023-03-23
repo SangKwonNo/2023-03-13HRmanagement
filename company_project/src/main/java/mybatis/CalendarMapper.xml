@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.calendar">
+	<resultMap id="calendar" type="hrmanagement.vo.Calendar">
+		<id property="num" column="num" />
+		<result property="title" column="title" />
+		<result property="start" column="start" />
+		<result property="end" column="end" />
+	</resultMap>
+
+
+	<insert id="saveSchedule" parameterType="calendar">
+		insert into
+		calendar(title,start,end) values (
+		#{title},
+		#{start},
+		#{end}
+		)
+	</insert>
+	<delete id="deleteSchedule" parameterType="Integer">
+		delete from calendar
+		where num=#{num}
+	</delete>
+	<select id="getSchedule" resultType="calendar">
+		Select * from calendar
+	</select>
+</mapper>

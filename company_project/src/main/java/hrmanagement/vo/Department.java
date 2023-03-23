@@ -1,6 +1,6 @@
 package hrmanagement.vo;
 
-public class department {
+public class Department {
 	private int num;
 	private int de_code;
 	private String de_name;
