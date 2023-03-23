@@ -22,11 +22,11 @@ function idCheck() {
 				$("#pw").val("");
 
 			} else if (data == 'employee') {
-				alert(data + "님 로그인");
+				alert($("#id").val() + "님 로그인");
 				window.location.href = "employee_main.do";
 
 			} else if (data == 'admin') {
-				alert(data + " 관리자 로그인");
+				alert("관리자 로그인");
 				window.location.href = "admin_main.do";
 			}
 

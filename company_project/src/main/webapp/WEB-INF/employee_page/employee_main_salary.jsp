@@ -8,7 +8,7 @@
 <meta charset="UTF-8">
 <title>사원 비밀번호 재확인</title>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="${ctx}/script/salary.js" defer></script>
+<script type="text/javascript" src="${ctx}/script/em_salary.js" defer></script>
 
 <link rel="stylesheet" href="${ctx}/css/index.css">
 <link rel="stylesheet" href="${ctx}/css/employee_main_salary.css">

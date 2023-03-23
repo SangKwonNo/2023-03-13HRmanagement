@@ -186,7 +186,11 @@
                             </tr>
                         </table><!-- second_right div end -->
                     </div><!-- second div end -->
+                    <div class="payStubMain3"><!-- tr div start -->
+                        <div class="pSMain3-1"> OO 회사 <br> 대표이사 OOO </div>
 
+
+                    </div><!-- tr div end -->
                 </div> <!-- A4 용지 끝 -->
             </div>
             <!-- 오른쪽메인화면 끝 -->

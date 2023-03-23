@@ -14,7 +14,7 @@ function pwCheck() {
 			if (data == "pass") {
 				alert("확인되었습니다");
 				$("#pw").val("");
-				window.location.href = "employee_salary_info.do";
+				window.location.href = "employee_main_salary_info.do";
 
 			} else {
 				alert('비밀번호를 확인해주세요.');
