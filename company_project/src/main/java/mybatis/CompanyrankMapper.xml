@@ -9,6 +9,8 @@
   <result property="rn_name" column="rn_name" />
   <result property="basic_salary" column="basic_salary" />
 </resultMap>
-
+	<select id="getRank" parameterType="String" resultType="companyrank">
+		select * from companyrank where rn_name = #{rn_name};
+	</select>
 
 </mapper>
