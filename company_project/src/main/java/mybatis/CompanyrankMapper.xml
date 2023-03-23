@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="mapper.companyrank">
-  <resultMap id="companyrank" type="hrmanagement.vo.companyrank">
+  <resultMap id="companyrank" type="hrmanagement.vo.Companyrank">
   <id property="num" column="num" />
   <result property="rn_code" column="rn_code" />
   <result property="rn_name" column="rn_name" />

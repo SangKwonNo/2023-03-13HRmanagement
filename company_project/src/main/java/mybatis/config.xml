@@ -14,7 +14,6 @@
       <typeAlias type="hrmanagement.vo.Vacation" alias="vacation"/> 
       <typeAlias type="hrmanagement.vo.Board_01" alias="board_01"/> 
       <typeAlias type="hrmanagement.vo.Calendar" alias="calendar"/> 
-     <!--  <typeAlias type="hrmanagement.vo.calender" alias="calender"/>  -->
        
   </typeAliases> 
   
@@ -41,7 +40,5 @@
     <mapper resource="mybatis/Board_01Mapper.xml"/>
     <mapper resource="mybatis/CalendarMapper.xml"/>
 
-   <!--  <mapper resource="mybatis/calender.xml"/> -->
-    
   </mappers>
 </configuration>

@@ -23,7 +23,7 @@
 		delete from calendar
 		where num=#{num}
 	</delete>
-	<select id="getSchedule" resultType="calendar">
+	<select id="getSchedule" resultMap="calendar">
 		Select * from calendar
 	</select>
 </mapper>
