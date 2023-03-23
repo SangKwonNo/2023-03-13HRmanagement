@@ -1,4 +1,4 @@
-package total_controller;
+package admin_controller;
 
 import java.io.IOException;
 
@@ -6,14 +6,17 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import admin_controller.Controller;
+import model.calendarDAO;
 
-public class LoginController implements Controller {
+public class Admin_main_delSchedule_Controller implements Controller{
 
 	@Override
 	public String requestHandler(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		return "main";
+		int num = Integer.parseInt(request.getParameter("no"));
+		System.out.println(num);
+		calendarDAO.getInstance().deleteSchedule(num);
+		return null;
 	}
 
 }

@@ -40,98 +40,10 @@
 						<a href="#">상세보기</a>
 					</div>
 				</div>
-				<div class="employee">
-					<div class="box name" id="name" name="name">노상권</div>
-					<div class="box department" id="department" name="department">프론트엔드</div>
-					<div class="box position" id="position" name="position">신입</div>
-					<div class="box info">
-						<a href="#">상세보기</a>
-					</div>
-				</div>
-				<div class="employee">
-					<div class="box name" id="name" name="name">노상권</div>
-					<div class="box department" id="department" name="department">프론트엔드</div>
-					<div class="box position" id="position" name="position">신입</div>
-					<div class="box info">
-						<a href="#">상세보기</a>
-					</div>
-				</div>
-				<div class="employee">
-					<div class="box name" id="name" name="name">노상권</div>
-					<div class="box department" id="department" name="department">프론트엔드</div>
-					<div class="box position" id="position" name="position">신입</div>
-					<div class="box info">
-						<a href="#">상세보기</a>
-					</div>
-				</div>
-				<div class="employee">
-					<div class="box name" id="name" name="name">노상권</div>
-					<div class="box department" id="department" name="department">프론트엔드</div>
-					<div class="box position" id="position" name="position">신입</div>
-					<div class="box info">
-						<a href="#">상세보기</a>
-					</div>
-				</div>
-				<div class="employee">
-					<div class="box name" id="name" name="name">노상권</div>
-					<div class="box department" id="department" name="department">프론트엔드</div>
-					<div class="box position" id="position" name="position">신입</div>
-					<div class="box info">
-						<a href="#">상세보기</a>
-					</div>
-				</div>
-				<div class="employee">
-					<div class="box name" id="name" name="name">노상권</div>
-					<div class="box department" id="department" name="department">프론트엔드</div>
-					<div class="box position" id="position" name="position">신입</div>
-					<div class="box info">
-						<a href="#">상세보기</a>
-					</div>
-				</div>
-				<div class="employee">
-					<div class="box name" id="name" name="name">노상권</div>
-					<div class="box department" id="department" name="department">프론트엔드</div>
-					<div class="box position" id="position" name="position">신입</div>
-					<div class="box info">
-						<a href="#">상세보기</a>
-					</div>
-				</div>
-				<div class="employee">
-					<div class="box name" id="name" name="name">노상권</div>
-					<div class="box department" id="department" name="department">프론트엔드</div>
-					<div class="box position" id="position" name="position">신입</div>
-					<div class="box info">
-						<a href="#">상세보기</a>
-					</div>
-				</div>
-				<div class="employee">
-					<div class="box name" id="name" name="name">노상권</div>
-					<div class="box department" id="department" name="department">프론트엔드</div>
-					<div class="box position" id="position" name="position">신입</div>
-					<div class="box info">
-						<a href="#">상세보기</a>
-					</div>
-				</div>
-				<div class="employee">
-					<div class="box name" id="name" name="name">노상권</div>
-					<div class="box department" id="department" name="department">프론트엔드</div>
-					<div class="box position" id="position" name="position">신입</div>
-					<div class="box info">
-						<a href="#">상세보기</a>
-					</div>
-				</div>
-				<div class="employee">
-					<div class="box name" id="name" name="name">노상권</div>
-					<div class="box department" id="department" name="department">프론트엔드</div>
-					<div class="box position" id="position" name="position">신입</div>
-					<div class="box info">
-						<a href="#">상세보기</a>
-					</div>
-				</div>
+				
 
 			</div>
 			<!-- 사원 목록 테이블 끝 -->
-
 		</div>
 	</div>
 </div>

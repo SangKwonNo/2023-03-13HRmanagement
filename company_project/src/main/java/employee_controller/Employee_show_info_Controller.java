@@ -11,17 +11,21 @@ import admin_controller.Controller;
 import hrmanagement.vo.Employee;
 import model.employeeDAO;
 
-public class Employee_main_list_Controller implements Controller {
+public class Employee_show_info_Controller implements Controller{
 
 	@Override
 	public String requestHandler(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		System.out.println("-- Employee_main_list_Controller --"); // 에러 or 현재접근 위치 확인용 콘솔
+		int num = Integer.parseInt(request.getParameter("num"));
+		Employee info = employeeDAO.getInstance().getInfo(num);
 		List<Employee> list = employeeDAO.getInstance().getList();
 		if (list != null) {
 			request.setAttribute("list", list);
 		}
-		return "/employee_page/employee_main_list";
+		System.out.println("info" + info);
+		System.out.println("num" + num);
+		request.setAttribute("info", info);
+		return "/employee_page/employee_main_showinfo";
 	}
 
 }

@@ -1,11 +1,11 @@
 package model;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
 import hrmanagement.MybatisConfig;
+import hrmanagement.vo.Calendar;
 import hrmanagement.vo.Employee;
 
 public class calendarDAO {
@@ -22,6 +22,7 @@ public class calendarDAO {
 	public void saveSchedule(Calendar calendar) {
 		SqlSession session = MybatisConfig.getInstance().openSession(true);
 		session.insert("mapper.calendar.saveSchedule", calendar);
+		System.out.println(calendar);
 		session.close();
 	}
 

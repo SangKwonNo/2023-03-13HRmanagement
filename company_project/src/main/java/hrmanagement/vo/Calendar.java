@@ -5,6 +5,16 @@ public class Calendar {
 	private String title;
 	private String start;
 	private String end;
+	
+	public Calendar() {};
+	
+	public Calendar(int num, String title, String start, String end) {
+		super();
+		this.num = num;
+		this.title = title;
+		this.start = start;
+		this.end = end;
+	}
 
 	public int getNum() {
 		return num;
@@ -36,6 +46,11 @@ public class Calendar {
 
 	public void setEnd(String end) {
 		this.end = end;
+	}
+
+	@Override
+	public String toString() {
+		return "Calendar [num=" + num + ", title=" + title + ", start=" + start + ", end=" + end + "]";
 	}
 
 }

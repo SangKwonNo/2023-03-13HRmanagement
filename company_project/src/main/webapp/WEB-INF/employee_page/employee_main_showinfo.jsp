@@ -31,7 +31,6 @@
 					</div>
 
 					<div class="left-list-content">
-
 						<div class="left-list-search">
 
 							<div class="left-list-search">
@@ -69,13 +68,55 @@
 			<!-- 왼쪽 메인화면 끝 -->
 
 			<!-- 오른쪽 메인화면 시작 -->
-			<c:set var="info" value="${info}" />
-			<div class="right-container"></div>
-			<!-- 오른쪽 메인화면 끝 -->
-
-			<div class="footer"></div>
+			<div class="right-container">
+				<div class="right-list-container">
+					<div class="right-list-container">
+						<div class="right-employeeinfo">
+							<div class="employeeinfo1">
+								<div class="img">
+									<img src="" alt="">
+								</div>
+								<div class="infobox">
+									<div>${info.name}
+										(${info.gender}) 전화번호 : ${info.phone}
+										<p>주민등록번호 : ${info.birth} - *********</p>
+									</div>
+									<div class="row">
+										<div>이메일 ${info.email}</div>
+										<div>
+											주소
+											<p>${info.addr}</p>
+										</div>
+									</div>
+									<div></div>
+								</div>
+							</div>
+							<div class="employeeinfo2">
+								<div>
+									소속
+									<p>${info.em_de_name}</p>
+								</div>
+								<div>
+									직책
+									<p>${info.em_rn_name}</p>
+								</div>
+								<div>
+									역할
+									<p>${info.em_job_name}</p>
+								</div>
+							</div>
+							<div class="chatbox"></div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<footer> </footer>
+	</div>
+	<!-- 오른쪽 메인화면 끝 -->
+
+	<div class="footer"></div>
+	</div>
+	<footer> </footer>
 </body>
 
 </html>

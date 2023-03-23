@@ -37,5 +37,15 @@
 		resultType="String">
 		select pw from employee where em_num=#{em_num}
 	</select>
-
+	<select id="employeeList" resultMap="employee">
+		select * from employee;
+	</select>
+	
+	<select id="employeeInfo" parameterType="Integer" resultType="employee"> 
+		select * from employee where num = #{num};
+	</select>
+	
+	<select id="employeeSearch" parameterType="String" resultType="employee">
+		select * from employee where name = #{name};
+	</select>
 </mapper>

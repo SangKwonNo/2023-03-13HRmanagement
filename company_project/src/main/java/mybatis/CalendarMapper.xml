@@ -17,13 +17,13 @@
 		#{title},
 		#{start},
 		#{end}
-		)
+		);
 	</insert>
 	<delete id="deleteSchedule" parameterType="Integer">
 		delete from calendar
-		where num=#{num}
+		where num=#{num};
 	</delete>
 	<select id="getSchedule" resultMap="calendar">
-		Select * from calendar
+		Select * from calendar;
 	</select>
 </mapper>
