@@ -17,62 +17,58 @@ public class employeeDAO {
 
 	}
 
-	public Employee loginTest(Employee employee) {
+	public int loginTest(Employee employee) {
+		System.out.println("employee = " + employee);
+		System.out.println("employee = " + employee);
+		System.out.println("employee = " + employee);
+		System.out.println("employee = " + employee);
+
 		SqlSession session = MybatisConfig.getInstance().openSession(true);
-		Employee loginEmployee = session.selectOne("mapper.employee.employeeLoginTest", employee);
 
-		String checkId = loginEmployee.getId();
-		String checkPw = loginEmployee.getPw();
-		String logId = employee.getId();
-		String logPw = employee.getPw();
+		Integer count = session.selectOne("mapper.employee.employeeLoginTest", employee);
+		System.out.println("count=" + count);
 
-		if (checkId.equals(logId) && checkPw.equals(logPw)) {
-			session.close();
-			return loginEmployee;
-		}
 		session.close();
-		return null;
+		if (count == null) {
+			return 0;
+		}
+		return count;
 	}
 
 	public int getNum(String id) {
 		SqlSession session = MybatisConfig.getInstance().openSession(true);
-		int loginNum = session.selectOne("mapper.employee.employeeNum", id);
+		Integer loginNum = session.selectOne("mapper.employee.employeeNum", id);
 		session.close();
+		if (loginNum == null) {
+			return 0;
+		}
 		return loginNum;
 	}
 
-	public String Login(Employee employee) {
+	public String pw(String id) {
 		SqlSession session = MybatisConfig.getInstance().openSession(true);
-		String loginId = session.selectOne("mapper.employee.employeeLogin", employee);
-		session.close();
-		return loginId;
-	}
-
-	public String pw(int em_num) {
-		SqlSession session = MybatisConfig.getInstance().openSession(true);
-		String employeePw = session.selectOne("mapper.employee.employeePw", em_num);
+		String employeePw = session.selectOne("mapper.employee.employeePw", id);
 		session.close();
 		return employeePw;
 	}
-	public List<Employee> getList () {
-		SqlSession session= MybatisConfig.getInstance().openSession(true);
-		   List<Employee> list = session.selectList("mapper.employee.employeeList");
-		   session.close();
-		   return list;  
-	}
-	
-	public Employee getInfo (int num) {
-		SqlSession session= MybatisConfig.getInstance().openSession(true);
-		   Employee info = session.selectOne("mapper.employee.employeeInfo", num);
-		   session.close();
-		   return info;
-	}
-	
-	public Employee getVo (String name) {
-		SqlSession session= MybatisConfig.getInstance().openSession(true);
-		   Employee VO = session.selectOne("mapper.employee.employeeInfo", name);
-		   session.close();
-		   return VO;
+
+	public List<Employee> getList() {
+		SqlSession session = MybatisConfig.getInstance().openSession(true);
+		List<Employee> list = session.selectList("mapper.employee.employeeList");
+		session.close();
+		return list;
 	}
 
+	public Employee getVo(String id) {
+		SqlSession session = MybatisConfig.getInstance().openSession(true);
+		Employee VO = session.selectOne("mapper.employee.employeeInfo", id);
+		session.close();
+		return VO;
+	}
+
+	public void infoUpdate(Employee e) {
+		SqlSession session = MybatisConfig.getInstance().openSession(true);
+		session.update("mapper.employee.employeeUpdate", e);
+		session.close();
+	}
 }

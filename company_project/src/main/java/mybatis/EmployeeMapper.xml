@@ -29,28 +29,27 @@
 	</select>
 
 	<select id="employeeLoginTest" parameterType="employee"
-		resultType="employee">
-		select * from employee where id=#{id}
+		resultType="Integer">
+		select * from employee where id=#{id} and pw = #{pw}
 	</select>
 
-	<select id="employeeLogin" parameterType="employee"
+	<select id="employeePw" parameterType="String"
 		resultType="String">
-		select id from employee where id=#{id}
-	</select>
-
-	<select id="employeePw" parameterType="Integer"
-		resultType="String">
-		select pw from employee where em_num=#{em_num}
+		select pw from employee where id=#{id}
 	</select>
 	<select id="employeeList" resultMap="employee">
 		select * from employee;
 	</select>
 	
-	<select id="employeeInfo" parameterType="Integer" resultType="employee"> 
-		select * from employee where num = #{num};
+	<select id="employeeInfo" parameterType="String" resultType="employee"> 
+		select * from employee where id = #{id};
 	</select>
 	
 	<select id="employeeSearch" parameterType="String" resultType="employee">
 		select * from employee where name = #{name};
 	</select>
+	
+	<update id="employeeUpdate" parameterType="employee">
+		update employee set name = #{name}, addr = #{addr}, phone = #{phone}, email = #{email} where id = #{id};
+	</update>
 </mapper>

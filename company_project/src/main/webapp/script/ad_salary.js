@@ -5,7 +5,7 @@ function pwCheck() {
 		return false;
 	}
 	$.ajax({
-		url: ctx + '/employee_main_pw_check.do',
+		url: ctx + '/admin_main_pw_check.do',
 		type: "POST",
 		data: {
 			"pw": $("#pw").val()
@@ -14,11 +14,11 @@ function pwCheck() {
 			if (data == "pass") {
 				alert("확인되었습니다");
 				$("#pw").val("");
-				window.location.href = "employee_main_salary_info.do";
+				window.location.href = "admin_main_salary_info.do";
 
 			} else {
 				alert('비밀번호를 확인해주세요.');
-				window.location.href = "employee_main.do";
+				window.location.href = "admin_main.do";
 
 			} 
 

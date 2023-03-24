@@ -55,7 +55,7 @@
 										<div class="box department" id="department" name="department">${vo.em_de_name}</div>
 										<div class="box position" id="position" name="position">${vo.em_rn_name}</div>
 										<div class="box info">
-											<a href="${ctx}/employee_show_info.do?num=${vo.num}">상세보기</a>
+											<a href="${ctx}/employee_show_info.do?id=${vo.id}">상세보기</a>
 										</div>
 									</div>
 								</c:forEach>
@@ -110,9 +110,9 @@
 					</div>
 				</div>
 			</div>
+	<!-- 오른쪽 메인화면 끝 -->
 		</div>
 	</div>
-	<!-- 오른쪽 메인화면 끝 -->
 
 	<div class="footer"></div>
 	</div>

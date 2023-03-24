@@ -25,6 +25,7 @@ INSERT INTO job (job_code, work) VALUES
 (501, '재무담당');
 
 INSERT INTO employee (name, birth, gender, addr, phone, email, id, pw, em_num, em_de_name, em_rn_name, em_job_name, em_entry, va_total, va_use) VALUES
+('노상권', '1998-05-15', '남', '경기도 시흥시', '010-3176-9334', 'yhlo000@naver.com', 'admin', 'admin', 1004, '개발부', '과장', '시스템관리', '2020-03-21', 24, 7),
 ('김영희', '1990-01-01', '여', '서울시 강남구', '010-1234-5678', 'kim@example.com', 'kim_yh', '1234', 1501, '영업부', '대리', '영업관리', '2020-01-01', 15, 7),
 ('이철수', '1991-02-01', '남', '서울시 서초구', '010-2345-6789', 'lee@example.com', 'lee_cs', '1234', 1202, '인사부', '대리', '채용관리', '2021-03-15', 20, 10),
 ('박민수', '1988-03-01', '남', '경기도 수원시', '010-3456-7890', 'park@example.com', 'park_ms', '1234', 3403, '영업부', '과장', '영업관리', '2018-05-01', 25, 15),

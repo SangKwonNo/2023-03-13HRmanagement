@@ -9,9 +9,12 @@
 <title>사원 정보 수정</title>
 <link rel="stylesheet" href="${ctx}/css/index.css">
 <link rel="stylesheet" href="${ctx}/css/employee_main_update.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
+	<c:set var="info" value="${loginEmployee}" />
 	<div class="container">
 		<div class="main">
 
@@ -22,6 +25,39 @@
 			<!-- 왼쪽메인화면 시작 -->
 			<div class="left-container">
 
+				<!-- 업데이트 체크 ajax -->
+				<script>
+					function updateCheck(form) {
+						$.ajax({
+							url : "${ctx}/employee_main_updateCheck.do",
+							type : "POST",
+							data : {
+								"name" : form.name.value,
+								"tel" : form.tel.value,
+								"email" : form.email.value,
+								"address" : form.address.value,
+								"num" : '${info.num}'
+							},
+							success : function(msg) {
+
+								if (msg == 'tel') {
+									alert('이미있는 전화번호 입니다.')
+								} else if (msg == 'email') {
+									alert('이미있는 이메일 입니다.')
+								} else {
+									alert("변경되었습니다.")
+									location.href='${ctx}/employee_main_update.do';	
+								}
+								
+							},
+							error : function() {
+								alert("ajax error")
+							}
+						});
+					}
+				</script>
+				<!-- 업데이트 체크 ajax -->
+
 				<div class="left-update-container">
 					<div class="title">정보 수정</div>
 
@@ -29,24 +65,25 @@
 					<form action="">
 						<div class="name">
 							<p>이름</p>
-							<input type="text" name="name" id="name">
+							<input type="text" name="name" id="name" value="${info.name}">
 						</div>
 						<div class="tel">
 							<p>전화번호</p>
-							<input type="tel" name="tel" id="tel">
+							<input type="tel" name="tel" id="tel" value="${info.phone}">
 						</div>
 						<div class="email">
 							<p>이메일</p>
-							<input type="eamil" name="email" id="email">
+							<input type="eamil" name="email" id="email" value="${info.email}">
 						</div>
 						<div class="address">
 							<p>주소</p>
-							<input type="text" name="address" id="address">
+							<input type="text" name="address" id="address"
+								value="${info.addr}">
 						</div>
 
 						<!-- button onclick 에 ajax 메소드 호출 들어가야함(본인 정보 제외 중복되면 안되는 조건처리 주소빼고) -->
 						<div class="button">
-							<button onclick="">변경</button>
+							<input type="button" onclick="updateCheck(form)" value="변경" />
 						</div>
 
 					</form>
@@ -56,40 +93,53 @@
 			<!-- 왼쪽메인화면 끝 -->
 
 			<!-- 오른쪽메인화면 시작 -->
-			<div class="right-container">
 
+			<div class="right-container">
 				<div class="right-list-container">
-					<div class="right-employeeinfo">
-						<div class="employeeinfo1">
-							<div class="img">
-								<img src="" alt="">
-							</div>
-							<div class="infobox">
-								<div></div>
-								<div class="row">
-									<div></div>
+					<div class="right-list-container">
+						<div class="right-employeeinfo">
+							<div class="employeeinfo1">
+								<div class="img">
+									<img src="" alt="">
+								</div>
+								<div class="infobox">
+									<div>${info.name}
+										(${info.gender}) 전화번호 : ${info.phone}
+										<p>주민등록번호 : ${info.birth} - *******</p>
+									</div>
+									<div class="row">
+										<div>이메일 ${info.email}</div>
+										<div>
+											주소
+											<p>${info.addr}</p>
+										</div>
+									</div>
 									<div></div>
 								</div>
-								<div></div>
 							</div>
+							<div class="employeeinfo2">
+								<div>
+									소속
+									<p>${info.em_de_name}</p>
+								</div>
+								<div>
+									직책
+									<p>${info.em_rn_name}</p>
+								</div>
+								<div>
+									역할
+									<p>${info.em_job_name}</p>
+								</div>
+							</div>
+							<div class="chatbox"></div>
 						</div>
-						<div class="employeeinfo2">
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-						</div>
-						<div class="employeeinfo3"></div>
 					</div>
 				</div>
-
 			</div>
 			<!-- 오른쪽메인화면 끝 -->
-
+			<div class="footer"></div>
 		</div>
-		<div class="footer"></div>
-	</div>
-	<footer> </footer>
+		<footer> </footer>
 </body>
 
 </html>

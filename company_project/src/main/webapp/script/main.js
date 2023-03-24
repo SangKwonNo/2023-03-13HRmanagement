@@ -15,8 +15,9 @@ function idCheck() {
 			"pw": $("#pw").val()
 		},
 		success: function(data) {
-			console.log("login_script_success")
-			if (data == 'null') {
+			console.log("login_script_success");
+			console.log("data", data);
+			if (data == 'fail') {
 				alert("아이디와 패스워드를 확인해주세요.");
 				$("#id").val("");
 				$("#pw").val("");

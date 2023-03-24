@@ -1,4 +1,4 @@
-package admin_controller;
+package employee_controller;
 
 import java.io.IOException;
 
@@ -7,10 +7,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import admin_controller.Controller;
 import hrmanagement.vo.Employee;
 import model.employeeDAO;
 
-public class Pw_Check_Controller implements Controller {
+public class Employee_main_Pw_Check_Controller implements Controller {
 
 	@Override
 	public String requestHandler(HttpServletRequest request, HttpServletResponse response)
@@ -22,12 +23,11 @@ public class Pw_Check_Controller implements Controller {
 		System.out.println("- getParameter pw : " + pw);
 
 		HttpSession session = request.getSession();
-		int loginNum = (int) session.getAttribute("loginNum");
-		System.out.println("loginNum : " + loginNum + " / pw : " + pw);
+		String log = (String)session.getAttribute("id");
+		System.out.println("logId : " + log + " / pw : " + pw);
 
-		String ctx = request.getContextPath();
 
-		String checkPw = employeeDAO.getInstance().pw(loginNum);
+		String checkPw = employeeDAO.getInstance().pw(log);
 		
 		if (checkPw.equals(pw)) {
 			response.getWriter().print("pass");
