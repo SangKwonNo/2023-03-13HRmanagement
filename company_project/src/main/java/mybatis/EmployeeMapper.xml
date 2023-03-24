@@ -52,4 +52,9 @@
 	<update id="employeeUpdate" parameterType="employee">
 		update employee set name = #{name}, addr = #{addr}, phone = #{phone}, email = #{email} where id = #{id};
 	</update>
+	
+	<delete id="employeeDelete" parameterType="Integer">
+		delete from employee where num = #{num};
+		
+	</delete>
 </mapper>

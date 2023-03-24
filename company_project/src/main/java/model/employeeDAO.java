@@ -71,4 +71,10 @@ public class employeeDAO {
 		session.update("mapper.employee.employeeUpdate", e);
 		session.close();
 	}
+
+	public void deleteEmployee(int num) {
+		SqlSession session = MybatisConfig.getInstance().openSession(true);
+		session.delete("mapper.employee.employeeDelete", num);
+		session.close();
+	}
 }

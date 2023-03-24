@@ -1,4 +1,4 @@
-package employee_controller;
+package admin_controller;
 
 import java.io.IOException;
 import java.util.List;
@@ -7,11 +7,10 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import admin_controller.Controller;
 import hrmanagement.vo.Employee;
 import model.employeeDAO;
 
-public class Employee_show_info_Controller implements Controller {
+public class Admin_main_show_info_Controller implements Controller {
 
 	@Override
 	public String requestHandler(HttpServletRequest request, HttpServletResponse response)
@@ -25,7 +24,7 @@ public class Employee_show_info_Controller implements Controller {
 		System.out.println("info" + info);
 		System.out.println("id" + log);
 		request.setAttribute("info", info);
-		return "/employee_page/employee_main_showinfo";
+		return "/admin_page/admin_main_show_info";
 	}
 
 }

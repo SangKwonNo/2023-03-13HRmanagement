@@ -1,1 +1,177 @@
-@charset "UTF-8";
+@charset "UTF-8";@charset "UTF-8";
+
+/* 좌측시작 */
+.left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.selectDate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 50px;
+
+    margin: 15px 0 0 0;
+}
+
+.selectDateBox {
+    width: 190px;
+    height: 30px;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.salaryViewBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 100%;
+    height: 200px;
+
+    font-size: 20px;
+}
+
+.salaryView {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 450px;
+    height: 40px;
+
+    font-size: 17px;
+
+    border-radius: 15px;
+    background-color: lightblue
+}
+
+.w300 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 300px;
+}
+
+.textBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    text-align: center;
+
+    width: 100%;
+    height: 200px;
+
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.fontSize20 {
+    font-size: 20px;
+}
+
+.pdfPrint {
+    width: 120px;
+    height: 30px;
+
+    margin: 0 0 15px 0;
+    font-weight: bold;
+}
+
+/* 좌측끝 */
+
+/* 우측시작 */
+.right-container {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+}
+
+.payStubBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 495px;
+    height: 700px;
+    /* A4비율 210 x 297 */
+    margin: 15px 0 0 0;
+}
+
+.payStubTopP {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 100%;
+    height: 100px;
+}
+
+table {
+    border: 1px solid black;
+    text-align: center;
+
+    border-collapse: collapse;
+
+    width: 240px;
+    font-size: 12px;
+}
+
+tr td {
+    border: 1px solid black;
+    height: 20px;
+}
+
+.payStubMain1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 100%;
+    height: 100px;
+}
+
+.payStubMain2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 100%;
+    height: 100px;
+}
+
+.payStubMain3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 150px;
+
+    font-size: 20px;
+    text-align: center;
+}
+
+.pSMain3-2 {
+	 font-size: 10px
+}
+
+
+
+
+
+
+
+/* 우측끝 */

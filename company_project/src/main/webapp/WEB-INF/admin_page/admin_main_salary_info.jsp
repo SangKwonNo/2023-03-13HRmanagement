@@ -8,7 +8,7 @@
 <meta charset="UTF-8">
 <title>사원 목록확인</title>
 <link rel="stylesheet" href="${ctx}/css/index.css">
-<link rel="stylesheet" href="${ctx}/css/employee_main_list.css">
+<link rel="stylesheet" href="${ctx}/css/admin_main_list.css">
 </head>
 
 <body>
@@ -50,13 +50,13 @@
 								<div class="attribute blank"></div>
 							</div>
 							<div class="left-employees">
-								<c:forEach var="vo" items="${list}">
+								<c:forEach var="em" items="${list}">
 									<div class="employee">
-										<div class="box name" id="name" name="name">${vo.name}</div>
-										<div class="box department" id="department" name="department">${vo.em_de_name}</div>
-										<div class="box position" id="position" name="position">${vo.em_rn_name}</div>
+										<div class="box name" id="name" name="name">${em.name}</div>
+										<div class="box department" id="department" name="department">${em.em_de_name}</div>
+										<div class="box position" id="position" name="position">${em.em_rn_name}</div>
 										<div class="box info">
-											<a href="${ctx}/employee_show_info.do?id=${vo.id}">급여관리</a>
+											<a href="${ctx}/admin_main_salary_show_info.do?id=${em.id}">급여관리</a>
 										</div>
 									</div>
 								</c:forEach>

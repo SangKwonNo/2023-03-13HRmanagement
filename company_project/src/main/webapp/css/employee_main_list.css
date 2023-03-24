@@ -85,7 +85,7 @@
 }
 
 .left-employee-attribute {
-    width: 600px;
+    width: 100%;
     height: 10%;
     display: flex;
     flex-flow: nowrap row;

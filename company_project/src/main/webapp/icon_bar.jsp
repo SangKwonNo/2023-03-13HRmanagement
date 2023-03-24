@@ -6,7 +6,7 @@
 <div class="icon">
 	<ul class="first-list">
 
-		<c:if test="${session.getAttribute("id") eq 'admin'}">
+		<c:if test="${sessionScope.id eq 'admin'}">
 			<div class="first-icon" role="" title="정보확인 및 수정" onclick=""></div>
 			<div class="second-icon" role="img" title="메인화면" onclick="location.href='${ctx}/admin_main.do'"></div>
 			<div class="third-icon" role="img" title="회원리스트" onclick="location.href='${ctx}/admin_main_list.do'"></div>
@@ -14,7 +14,7 @@
 			<div class="fifth-icon" role="img" title="급여확인" onclick="location.href='${ctx}/admin_main_salary.do'"></div>
 			<div class="last-icon" role="img" title="로그아웃" onclick="logout()"></div>
 		</c:if>
-		<c:if test="${session.getAttribute("id") ne 'admin'}">
+		<c:if test="${sessionScope.id ne 'admin'}">
 			<div class="first-icon" role="" title="정보확인 및 수정" onclick="location.href='${ctx}/employee_main_update.do'"></div>
 			<div class="second-icon" role="img" title="메인화면" onclick="location.href='${ctx}/employee_main.do'"></div>
 			<div class="third-icon" role="img" title="회원리스트" onclick="location.href='${ctx}/employee_main_list.do'"></div>
