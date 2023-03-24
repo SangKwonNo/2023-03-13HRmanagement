@@ -8,6 +8,8 @@
 <head>
 <meta charset="UTF-8">
 <title>사원 메인</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="${ctx}/script/em_main.js" defer></script>
 <link rel="stylesheet" href="${ctx}/css/index.css">
 <link rel="stylesheet" href="${ctx}/css/employee_main.css">
 </head>
@@ -26,7 +28,30 @@
 				<div class="info1">
 
 					<!-- 공지사항 시작 -->
-					<jsp:include page="../../announcement_bar.jsp" />
+					<div class="board-title">
+						<div class="board-img">
+							<img src="https://cdn-icons-png.flaticon.com/512/568/568297.png"
+								alt="">
+						</div>
+						<div class="board-name">공지사항</div>
+					</div>
+					<div class="board-content">
+
+						<!-- < 공지 구현 방식 >
+                            1. 게시판 형식 (안간편)
+                            -> DB 연동하고 어드민과 회원들의 게시글 작성 및 수정 삭제 공유
+                            2. JSON 형식 (간편)
+                            -> 고정 데이터를 JSON 으로 저장하고 값 가져오기
+                        -->
+						<c:forEach var="vo" items="${list}" varStatus="status">
+							<div class="line">
+								<div class="writeBox" onclick="detailView(${status.index+1})">
+									<div class="inWriteBox">${status.index + 1}.${vo.subject}</div>
+									<div class="inWriteBox">${vo.regDate}</div>
+								</div>
+							</div>
+						</c:forEach>
+					</div>
 					<!-- 공지사항 끝 -->
 
 				</div>
@@ -46,7 +71,13 @@
 			<!-- 왼쪽메인화면 끝 -->
 
 			<!-- 오른쪽 메인화면 시작 -->
-			<div class="right-container"></div>
+			<div class="right-container">
+				<div class="right-board-container">
+					<div class="right-board-title">${board.subject}</div>
+					<div class="right-board-date">${board.regDate}</div>
+					<div class="right-board-content">${board.contents}</div>
+				</div>
+			</div>
 			<!-- 오른쪽 메인화면 끝 -->
 
 		</div>

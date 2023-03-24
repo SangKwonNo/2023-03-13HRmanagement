@@ -48,12 +48,18 @@
 
 			<!-- 오른쪽 메인화면 시작 -->
 			<div class="right-container">
-				<div class="right-board-container">
-					<div class="right-board-title"></div>
-					<div class="right-board-date"></div>
-					<div class="right-board-content"></div>
-				</div>
-			</div>
+                <div class="right-board-container">
+                    <div class="right-board-title">
+
+                    </div>
+                    <div class="right-board-date">
+
+                    </div>
+                    <div class="right-board-content">
+
+                    </div>
+                </div>
+            </div>
 			<!-- 오른쪽 메인화면 끝 -->
 
 		</div>

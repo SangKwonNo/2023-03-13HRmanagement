@@ -20,7 +20,7 @@
                         -->
 	<div class="line"></div>
 	<div class="write">
-		<a href="#" id="content1">공지1</a>
+		<a href="#" id="content1">1. </a>
 	</div>
 	<div class="line"></div>
 	<div class="write">
