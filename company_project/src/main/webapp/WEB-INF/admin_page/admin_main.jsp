@@ -7,6 +7,8 @@
 <head>
 <meta charset="UTF-8">
 <title>관리자 메인</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="${ctx}/script/ad_main.js" defer></script>
 <link rel="stylesheet" href="${ctx}/css/index.css">
 <link rel="stylesheet" href="${ctx}/css/admin_main.css">
 </head>
@@ -33,27 +35,14 @@
 						<div class="board-name">공지사항</div>
 					</div>
 					<div class="board-content">
-						<div class="line"></div>
-						<div class="write">
-							<a href="#" id="content1">공지1</a>
-						</div>
-						<div class="line"></div>
-						<div class="write">
-							<a href="#" id="content1">공지2</a>
-						</div>
-						<div class="line"></div>
-						<div class="write">
-							<a href="#" id="content1">공지3</a>
-						</div>
-						<div class="line"></div>
-						<div class="write">
-							<a href="#" id="content1">공지4</a>
-						</div>
-						<div class="line"></div>
-						<div class="write">
-							<a href="#" id="content1">공지5</a>
-						</div>
-						<div class="line"></div>
+						<c:forEach var="vo" items="${list}" varStatus="status">
+							<div class="line">
+								<div class="writeBox" onclick="detailView(${status.index+1})">
+									<div class="inWriteBox">${status.index + 1}.${vo.subject}</div>
+									<div class="inWriteBox">${vo.regDate}</div>
+								</div>
+							</div>
+						</c:forEach>
 					</div>
 					<!-- 공지사항 끝 -->
 
@@ -104,7 +93,19 @@
 			<!-- 왼쪽메인화면 끝 -->
 
 			<!-- 오른쪽 메인화면 시작 -->
-			<div class="right-container"></div>
+			<div class="right-container">
+				<div class="right-board-container">
+					<input class="right-board-title" type="hidden" name="num" id="num"
+						value="${board.num}">
+					<input class="right-board-title" type="text" name="subject" id="subject"
+						value="${board.subject}">
+					<input class="right-board-date" type="text" name="regDate"
+						id="regDate" value="${board.regDate}">
+					<textarea class="right-board-content" rows="10" cols="50"
+						name="contents" id="contents">${board.contents}</textarea>
+					<button class="updateButton" onClick="showConfirm()">수정</button>
+				</div>
+			</div>
 			<!-- 오른쪽 메인화면 끝 -->
 
 		</div>

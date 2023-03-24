@@ -3,15 +3,23 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="mapper.board_01">
-  <resultMap id="board_01" type="hrmanagement.vo.Board_01">
-  <id property="num" column="num" />
-  <result property="type" column="type" />
-  <result property="writer" column="writer" />
-  <result property="subject" column="subject" />
-  <result property="contents" column="contents" />
-  <result property="regDate" column="regDate" />
-</resultMap>
+	<resultMap id="board_01" type="hrmanagement.vo.Board_01">
+		<id property="num" column="num" />
+		<result property="type" column="type" />
+		<result property="writer" column="writer" />
+		<result property="subject" column="subject" />
+		<result property="contents" column="contents" />
+		<result property="regDate" column="regDate" />
+	</resultMap>
 
+	<select id="getAllBoard" resultMap="board_01">
+		select * from board_01
+	</select>
 
+	<update id="BoardUpdate" parameterType="board_01">
+		update board_01 set
+		regDate = #{regDate}, subject = #{subject}, contents = #{contents}
+		where num = #{num};
+	</update>
 
 </mapper>

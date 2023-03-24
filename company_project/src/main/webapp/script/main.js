@@ -1,4 +1,5 @@
 let ctx = window.location.pathname.substring(0, window.location.pathname.indexOf("/", 2));
+
 function idCheck() {
 	if ($("#id").val() == '') {
 		alert('아이디를 입력해주세요.');
@@ -8,7 +9,7 @@ function idCheck() {
 		return false;
 	}
 	$.ajax({
-		url: ctx+'/login_check.do',
+		url: ctx + '/login_check.do',
 		type: "POST",
 		data: {
 			"id": $("#id").val(),
@@ -38,3 +39,6 @@ function idCheck() {
 		}
 	});
 }
+
+
+

@@ -51,7 +51,12 @@ VALUES
     ('Product launch', '2023-03-23 15:00:00', '2023-03-23 17:00:00');
     
     
-    
+INSERT INTO board_01 (type, writer, subject, contents, regDate) VALUES 
+('회사', '노상권', '공지사항1', '이번 주차 회의 안건입니다.', DATE_FORMAT(FROM_UNIXTIME(UNIX_TIMESTAMP('2022-03-10') + FLOOR(RAND() * 15)), '%Y.%m.%d')),
+('회사', '노상권', '공지사항2', '내일부터 출근시간이 변경됩니다.', DATE_FORMAT(FROM_UNIXTIME(UNIX_TIMESTAMP('2022-03-10') + FLOOR(RAND() * 15)), '%Y.%m.%d')),
+('회사', '노상권', '공지사항3', '다음 주차 예산 검토를 위한 회의 일정입니다.', DATE_FORMAT(FROM_UNIXTIME(UNIX_TIMESTAMP('2022-03-10') + FLOOR(RAND() * 15)), '%Y.%m.%d')),
+('회사', '노상권', '공지사항4', '이번 주차 금요일은 근무시간이 줄어듭니다.', DATE_FORMAT(FROM_UNIXTIME(UNIX_TIMESTAMP('2022-03-10') + FLOOR(RAND() * 15)), '%Y.%m.%d')),
+('회사', '노상권', '공지사항5', '다음 주차 신입사원 교육 일정이 업데이트 되었습니다.', DATE_FORMAT(FROM_UNIXTIME(UNIX_TIMESTAMP('2022-03-10') + FLOOR(RAND() * 15)), '%Y.%m.%d'));        
     
     
     

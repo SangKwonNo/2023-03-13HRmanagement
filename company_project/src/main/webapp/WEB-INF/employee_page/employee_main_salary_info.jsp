@@ -56,18 +56,14 @@
 				<div class="textBox">
 					<div class="fontSize20">
 						지급날짜 : 23. ${month}. 10<br> <br> 예상지급액 :
-						${vo.basic_salary}<br> <br>
+						${vo.basic_salary} 원 <br> <br>
 					</div>
 					<div>
 						위 금액은 세전 예상금액이며,<br>실제 지급시 상세 내용에 따라 변동이 있을 수 있음
 					</div>
 				</div>
 				<div>
-				
-				<button class="pdfPrint" onclick="saveAsImage()">명세표 저장</button>
-					<!-- <input class="pdfPrint" type="button" type="button" value="명세표 저장"
-						onclick="saveAsImage()"> -->
-
+					<button class="pdfPrint" onClick="printFunction()">명세표 저장</button>
 				</div>
 			</div>
 			<!-- 왼쪽메인화면 끝 -->
