@@ -33,10 +33,6 @@
 
 				<div class="info2">
 
-					<!-- 이번주 일정표 시작 -->
-					<jsp:include page="../../schedule_bar.jsp" />
-					<!-- 이번주 일정표 끝 -->
-
 					<!-- 메모장 시작 -->
 					<jsp:include page="../../note_bar.jsp" />
 					<!-- 메모장 끝 -->

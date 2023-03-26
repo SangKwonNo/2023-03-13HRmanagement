@@ -14,5 +14,13 @@
   <result property="memo" column="memo" />
 </resultMap>
 
-
+<select id="isDate" parameterType="attendance" resultMap="attendance">
+	select check_in from attendance where em_num =#{em_num};
+</select>
+<insert id="insertWork" parameterType="attendance">
+	insert into attendance(em_num, check_in, check_out, memo) values (#{em_num}, #{check_in},#{check_out}, #{memo});
+</insert>
+<select id="getList" parameterType="Integer" resultMap="attendance">
+	select * from attendance where em_num = #{em_num};
+</select>
 </mapper>
