@@ -1,6 +1,12 @@
 package hrmanagement.vo;
 
 public class Attendance {
+	@Override
+	public String toString() {
+		return "Attendance [num=" + num + ", em_num=" + em_num + ", check_in=" + check_in + ", check_out=" + check_out
+				+ ", late=" + late + ", early_leave=" + early_leave + ", vacation=" + vacation + ", memo=" + memo + "]";
+	}
+
 	private int num;
 	private int em_num;
 	private String check_in;

@@ -18,6 +18,7 @@ public class Employee_main_Controller implements Controller {
 			throws ServletException, IOException {
 		System.out.println("-- Employee_main_Controller --"); // 에러 or 현재접근 위치 확인용 콘솔
 		
+<<<<<<< HEAD
 		List<Board_01> list = board_01DAO.getInstance().getList();
 		if (list != null) {
 			request.setAttribute("list", list);
@@ -30,6 +31,8 @@ public class Employee_main_Controller implements Controller {
 		Board_01 board = list.get(log-1);
 		request.setAttribute("board", board);
 		
+=======
+>>>>>>> nsk_dev
 		return "/employee_page/employee_main";
 
 	}

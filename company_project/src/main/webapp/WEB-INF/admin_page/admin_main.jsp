@@ -1,14 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <c:set var="ctx" value="${pageContext.request.contextPath}" />
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
+<<<<<<< HEAD
 <title>관리자 메인</title>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="${ctx}/script/ad_main.js" defer></script>
+=======
+<title>사원 메인</title>
+>>>>>>> nsk_dev
 <link rel="stylesheet" href="${ctx}/css/index.css">
 <link rel="stylesheet" href="${ctx}/css/admin_main.css">
 </head>
@@ -27,6 +32,7 @@
 				<div class="info1">
 
 					<!-- 공지사항 시작 -->
+<<<<<<< HEAD
 					<div class="board-title">
 						<div class="board-img">
 							<img src="https://cdn-icons-png.flaticon.com/512/568/568297.png"
@@ -44,48 +50,17 @@
 							</div>
 						</c:forEach>
 					</div>
+=======
+					<jsp:include page="../../announcement_bar.jsp" />
+>>>>>>> nsk_dev
 					<!-- 공지사항 끝 -->
 
 				</div>
 
 				<div class="info2">
 
-					<!-- 이번주 일정표 시작 -->
-					<div class="schedule">
-						<div class="schedule-title">
-							<div class="schedule-img">
-								<img
-									src="https://cdn-icons-png.flaticon.com/512/1216/1216995.png"
-									alt="">
-							</div>
-							<div class="schedule-name">이번주 일정</div>
-						</div>
-						<div class="schedule-content">
-							<div class="week">
-								<div id="mon"></div>
-								<div id="tues"></div>
-								<div id="wednes"></div>
-								<div id="thurs"></div>
-								<div id="fri"></div>
-							</div>
-						</div>
-					</div>
-					<!-- 이번주 일정표 끝 -->
-
 					<!-- 메모장 시작 -->
-					<div class="note">
-						<div class="note-title">
-							<div class="note-img">
-								<img
-									src="https://cdn-icons-png.flaticon.com/512/2885/2885538.png"
-									alt="">
-							</div>
-							<div class="note-name">메모장</div>
-						</div>
-						<div class="note-content">
-							<div class="note-write"></div>
-						</div>
-					</div>
+					<jsp:include page="../../note_bar.jsp" />
 					<!-- 메모장 끝 -->
 
 				</div>
