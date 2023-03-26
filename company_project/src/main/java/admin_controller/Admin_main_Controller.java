@@ -7,13 +7,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-<<<<<<< HEAD
 import hrmanagement.vo.Board_01;
 import model.board_01DAO;
-=======
-import hrmanagement.vo.Calendar;
-import model.calendarDAO;
->>>>>>> nsk_dev
 
 public class Admin_main_Controller implements Controller {
 
