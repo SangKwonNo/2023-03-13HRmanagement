@@ -24,7 +24,7 @@
 
 			<!-- 왼쪽 메인화면 시작 -->
 			<div class="left-container">
-				
+
 				<div class="info1">
 
 					<!-- 공지사항 시작 -->

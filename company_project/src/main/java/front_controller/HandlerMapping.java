@@ -35,6 +35,7 @@ import total_controller.LogoutController;
 import total_controller.MainController;
 import total_controller.ScheduleShowController;
 import total_controller.SearchController;
+import total_controller.UploadController;
 
 public class HandlerMapping {
 	private HashMap<String, Controller> mappings;
@@ -77,6 +78,7 @@ public class HandlerMapping {
 		mappings.put("/main.do", new MainController());
 		mappings.put("/scheduleShow.do", new ScheduleShowController());
 		mappings.put("/search.do", new SearchController());
+		mappings.put("/upload.do", new UploadController());
 
 	}
 

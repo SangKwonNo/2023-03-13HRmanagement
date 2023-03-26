@@ -87,39 +87,42 @@
 			<!-- 왼쪽 메인화면 끝 -->
 
 			<!-- 오른쪽 메인화면 시작 -->
-			<div class="right-container">
+
+				<div class="right-container">
 				<div class="right-list-container">
 					<div class="right-list-container">
 						<div class="right-employeeinfo">
 							<div class="employeeinfo1">
-								<div class="img">
-									<img src="" alt="">
+								 <div class="img">
+									<div class="imgBox">
+										<img src="" alt="">
+									</div>
 								</div>
 								<div class="infobox">
-									<div>${info.name}
+									<div class="paddingLeft">${info.name}
 										(${info.gender}) 전화번호 : ${info.phone}
-										<p>주민등록번호 : ${info.birth} - *********</p>
+										<p>주민등록번호 : ${info.birth} - *******</p>
 									</div>
-									<div class="row">
-										<div>이메일 ${info.email}</div>
-										<div>
-											주소
-											<p>${info.addr}</p>
-										</div>
+									<div class="paddingLeft">
+										이메일
+										<p>${info.email}</p>
 									</div>
-									<div></div>
+									<div class="paddingLeft">
+										주소
+										<p>${info.addr}</p>
+									</div>
 								</div>
 							</div>
 							<div class="employeeinfo2">
-								<div>
+								<div class="paddingLeft">
 									소속
 									<p>${info.em_de_name}</p>
 								</div>
-								<div>
+								<div class="paddingLeft">
 									직책
 									<p>${info.em_rn_name}</p>
 								</div>
-								<div>
+								<div class="paddingLeft">
 									역할
 									<p>${info.em_job_name}</p>
 								</div>

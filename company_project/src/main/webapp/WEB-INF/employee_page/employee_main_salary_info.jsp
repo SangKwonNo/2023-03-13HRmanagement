@@ -128,31 +128,31 @@
 							</tr>
 							<tr>
 								<td class="colorBox2">초 과 수 당</td>
-								<td>0</td>
+								<td> </td>
 							</tr>
 							<tr>
 								<td class="colorBox2">휴 일 수 당</td>
-								<td>0</td>
+								<td> </td>
 							</tr>
 							<tr>
 								<td class="colorBox2">식대</td>
-								<td>0</td>
+								<td> </td>
 							</tr>
 							<tr>
 								<td class="colorBox2">통신비</td>
-								<td>0</td>
+								<td> </td>
 							</tr>
 							<tr>
 								<td class="colorBox2">차량유지비</td>
-								<td>0</td>
+								<td> </td>
 							</tr>
 							<tr>
-								<td class="colorBox2">하늘..는비</td>
-								<td>0</td>
+								<td class="colorBox2"> </td>
+								<td> </td>
 							</tr>
 							<tr>
-								<td class="colorBox2">레이니즘비</td>
-								<td>0</td>
+								<td class="colorBox2"> </td>
+								<td> </td>
 							</tr>
 							<!-- 갯수는 ?? -->
 							<tr>
@@ -168,31 +168,31 @@
 							</tr>
 							<tr>
 								<td class="colorBox2">근로소득세</td>
-								<td>-</td>
+								<td> </td>
 							</tr>
 							<tr>
 								<td class="colorBox2">지방소득세</td>
-								<td>-</td>
+								<td> </td>
 							</tr>
 							<tr>
 								<td class="colorBox2">국민연금</td>
-								<td>-</td>
+								<td> </td>
 							</tr>
 							<tr>
 								<td class="colorBox2">고용보험</td>
-								<td>-</td>
+								<td> </td>
 							</tr>
 							<tr>
 								<td class="colorBox2">건강보험</td>
-								<td>-</td>
+								<td> </td>
 							</tr>
 							<tr>
-								<td class="colorBox2">xx세</td>
-								<td>-</td>
+								<td class="colorBox2"> </td>
+								<td> </td>
 							</tr>
 							<tr>
-								<td class="colorBox2">많이세</td>
-								<td>-</td>
+								<td class="colorBox2"> </td>
+								<td> </td>
 							</tr>
 							<tr>
 								<td class="colorBox2">공 제 합 계</td>

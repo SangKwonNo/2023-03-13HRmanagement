@@ -28,32 +28,33 @@
 				<!-- 업데이트 체크 ajax -->
 				<script>
 					function updateCheck(form) {
-						$.ajax({
-							url : "${ctx}/employee_main_updateCheck.do",
-							type : "POST",
-							data : {
-								"name" : form.name.value,
-								"tel" : form.tel.value,
-								"email" : form.email.value,
-								"address" : form.address.value,
-								"num" : '${info.num}'
-							},
-							success : function(msg) {
+						$
+								.ajax({
+									url : "${ctx}/employee_main_updateCheck.do",
+									type : "POST",
+									data : {
+										"name" : form.name.value,
+										"tel" : form.tel.value,
+										"email" : form.email.value,
+										"address" : form.address.value,
+										"num" : '${info.num}'
+									},
+									success : function(msg) {
 
-								if (msg == 'tel') {
-									alert('이미있는 전화번호 입니다.')
-								} else if (msg == 'email') {
-									alert('이미있는 이메일 입니다.')
-								} else {
-									alert("변경되었습니다.")
-									location.href='${ctx}/employee_main_update.do';	
-								}
-								
-							},
-							error : function() {
-								alert("ajax error")
-							}
-						});
+										if (msg == 'tel') {
+											alert('이미있는 전화번호 입니다.')
+										} else if (msg == 'email') {
+											alert('이미있는 이메일 입니다.')
+										} else {
+											alert("변경되었습니다.")
+											location.href = '${ctx}/employee_main_update.do';
+										}
+
+									},
+									error : function() {
+										alert("ajax error")
+									}
+								});
 					}
 				</script>
 				<!-- 업데이트 체크 ajax -->
@@ -100,33 +101,42 @@
 						<div class="right-employeeinfo">
 							<div class="employeeinfo1">
 								<div class="img">
-									<img src="" alt="">
+									<div class="imgBox">
+										<img src="${ctx}/image/profile_1.JPG" style="width: 100%;">
+										<!-- 전페이지에서가져오기 -->							
+									</div>
+									<form id="imgForm" action="upload.do" method="post"
+										enctype="multipart/form-data">
+										<input type="file" class="profileUpload" onchange="update()"
+											id="formFile" type="file" name="uploadFile" accept=" .jpg" value="변경"/>
+											
+									</form>
 								</div>
 								<div class="infobox">
-									<div>${info.name}
+									<div class="paddingLeft">${info.name}
 										(${info.gender}) 전화번호 : ${info.phone}
 										<p>주민등록번호 : ${info.birth} - *******</p>
 									</div>
-									<div class="row">
-										<div>이메일 ${info.email}</div>
-										<div>
-											주소
-											<p>${info.addr}</p>
-										</div>
+									<div class="paddingLeft">
+										이메일
+										<p>${info.email}</p>
 									</div>
-									<div></div>
+									<div class="paddingLeft">
+										주소
+										<p>${info.addr}</p>
+									</div>
 								</div>
 							</div>
 							<div class="employeeinfo2">
-								<div>
+								<div class="paddingLeft">
 									소속
 									<p>${info.em_de_name}</p>
 								</div>
-								<div>
+								<div class="paddingLeft">
 									직책
 									<p>${info.em_rn_name}</p>
 								</div>
-								<div>
+								<div class="paddingLeft">
 									역할
 									<p>${info.em_job_name}</p>
 								</div>
@@ -137,9 +147,10 @@
 				</div>
 			</div>
 			<!-- 오른쪽메인화면 끝 -->
-			<div class="footer"></div>
 		</div>
-		<footer> </footer>
+		<div class="footer"></div>
+	</div>
+	<footer> </footer>
 </body>
 
 </html>

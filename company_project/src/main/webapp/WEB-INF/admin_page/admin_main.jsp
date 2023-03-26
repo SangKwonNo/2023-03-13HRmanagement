@@ -71,9 +71,8 @@
 			<div class="right-container">
 				<div class="right-board-container">
 					<input class="right-board-title" type="hidden" name="num" id="num"
-						value="${board.num}">
-					<input class="right-board-title" type="text" name="subject" id="subject"
-						value="${board.subject}">
+						value="${board.num}"> <input class="right-board-title"
+						type="text" name="subject" id="subject" value="${board.subject}">
 					<input class="right-board-date" type="text" name="regDate"
 						id="regDate" value="${board.regDate}">
 					<textarea class="right-board-content" rows="10" cols="50"

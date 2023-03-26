@@ -71,7 +71,7 @@
 
 			<!-- 오른쪽 메인화면 시작 -->
 			<div class="right-container">
-				
+
 				<div class="payStubBox">
 					<!-- A4 용지 시작 -->
 					<div class="payStubTop">
@@ -130,31 +130,31 @@
 							</tr>
 							<tr>
 								<td class="colorBox2">초 과 수 당</td>
-								<td>0</td>
+								<td> </td>
 							</tr>
 							<tr>
 								<td class="colorBox2">휴 일 수 당</td>
-								<td>0</td>
+								<td> </td>
 							</tr>
 							<tr>
 								<td class="colorBox2">식대</td>
-								<td>0</td>
+								<td> </td>
 							</tr>
 							<tr>
 								<td class="colorBox2">통신비</td>
-								<td>0</td>
+								<td> </td>
 							</tr>
 							<tr>
 								<td class="colorBox2">차량유지비</td>
-								<td>0</td>
+								<td> </td>
 							</tr>
 							<tr>
-								<td class="colorBox2">하늘..는비</td>
-								<td>0</td>
+								<td class="colorBox2"> </td>
+								<td> </td>
 							</tr>
 							<tr>
-								<td class="colorBox2">레이니즘비</td>
-								<td>0</td>
+								<td class="colorBox2"> </td>
+								<td> </td>
 							</tr>
 							<!-- 갯수는 ?? -->
 							<tr>
@@ -189,12 +189,12 @@
 								<td>-</td>
 							</tr>
 							<tr>
-								<td class="colorBox2">xx세</td>
-								<td>-</td>
+								<td class="colorBox2"> </td>
+								<td> </td>
 							</tr>
 							<tr>
-								<td class="colorBox2">많이세</td>
-								<td>-</td>
+								<td class="colorBox2"> </td>
+								<td> </td>
 							</tr>
 							<tr>
 								<td class="colorBox2">공 제 합 계</td>
