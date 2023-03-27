@@ -30,8 +30,8 @@ body {
 		hsla(305, 75%, 83%, 1) 100%);
 	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#979A74",
 		endColorstr="#F2F3E2", GradientType=1);
-	border-top-left-radius: 20px;
-	border-bottom-left-radius: 20px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
 }
 
 .conta {
@@ -179,6 +179,8 @@ body {
 	width: 50%;
 	height: 100%;
 	background-color: rgba(255, 255, 255, 0.897);
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
 }
 
 .login {
