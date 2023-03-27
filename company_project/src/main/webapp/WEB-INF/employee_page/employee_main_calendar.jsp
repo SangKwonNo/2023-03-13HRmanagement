@@ -109,7 +109,7 @@
 														}
 
 													},
-													editable : true, // false로 변경 시 draggable 작동 x 
+													editable : false, // false로 변경 시 draggable 작동 x 
 													displayEventTime : true,
 													locale : 'ko',
 													eventColor : 'gray',
