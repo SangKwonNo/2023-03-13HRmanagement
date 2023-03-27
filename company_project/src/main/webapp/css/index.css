@@ -59,7 +59,7 @@ body {
 	flex-flow: nowrap row;
 }
 
-.first-list {
+.first-listo {
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -67,13 +67,14 @@ body {
 	align-items: center;
 	border-radius: 20px;
 	justify-content: center;
+	
 }
 
 .first-icon {
 	margin-top: 10px;
 }
 
-.first-list div {
+.first-listo div {
 	text-decoration: none;
 	font-style: none;
 	list-style: none;
@@ -84,7 +85,7 @@ body {
 	display: flex;
 }
 
-.icon {
+.icon-ico {
 	width: 100px;
 	height: 100%;
 	border-top-left-radius: 20px;
@@ -221,11 +222,11 @@ footer {
 	background-size: cover;
 }
 
-.first-list div:hover {
+.first-listo div:hover {
 	cursor: pointer;
 }
 
-.first-list div:active {
+.first-listo div:active {
 	transform: scale(0.95);
 }
 

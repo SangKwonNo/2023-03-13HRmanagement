@@ -7,13 +7,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<<<<<<< HEAD
 <title>관리자 메인</title>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="${ctx}/script/ad_main.js" defer></script>
-=======
 <title>사원 메인</title>
->>>>>>> nsk_dev
 <link rel="stylesheet" href="${ctx}/css/index.css">
 <link rel="stylesheet" href="${ctx}/css/admin_main.css">
 </head>
@@ -32,7 +29,6 @@
 				<div class="info1">
 
 					<!-- 공지사항 시작 -->
-<<<<<<< HEAD
 					<div class="board-title">
 						<div class="board-img">
 							<img src="https://cdn-icons-png.flaticon.com/512/568/568297.png"
@@ -50,10 +46,6 @@
 							</div>
 						</c:forEach>
 					</div>
-=======
-					<jsp:include page="../../announcement_bar.jsp" />
->>>>>>> nsk_dev
-					<!-- 공지사항 끝 -->
 
 				</div>
 

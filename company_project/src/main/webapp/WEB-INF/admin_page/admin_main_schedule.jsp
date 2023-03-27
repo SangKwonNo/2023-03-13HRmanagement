@@ -50,6 +50,7 @@
 													timeZone : 'UTC',
 													headerToolbar : {
 														left : 'prev,next today',
+														center : 'myCustomButton',
 														right : 'dayGridMonth,timeGridWeek,timeGridDay'
 													},
 													selectable : true,
@@ -129,6 +130,21 @@
 																						});
 																			}
 																		});
+													},
+													customButtons : {
+
+														myCustomButton : {
+
+															text : '근태관리',
+
+															click : function(
+																	event) {
+																location.href = '${ctx}/admin_main_calendar.do';
+
+															}
+
+														}
+
 													},
 													eventClick : function(info) {
 														$('#exampleModal')

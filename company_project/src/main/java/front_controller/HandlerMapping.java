@@ -6,6 +6,7 @@ import admin_controller.Admin_main_Controller;
 import admin_controller.Admin_main_Pw_Check_Controller;
 import admin_controller.Admin_main_addSchedule_Controller;
 import admin_controller.Admin_main_board_Controller;
+import admin_controller.Admin_main_calendarShow_Controller;
 import admin_controller.Admin_main_calendar_Controller;
 import admin_controller.Admin_main_delSchedule_Controller;
 import admin_controller.Admin_main_delete_employee_Controller;
@@ -73,6 +74,7 @@ public class HandlerMapping {
 		mappings.put("/admin_main_salary_show_info.do", new Admin_main_salary_show_info_Controller());
 		mappings.put("/admin_main_show_info.do", new Admin_main_show_info_Controller());
 		mappings.put("/admin_main_delete_employee.do", new Admin_main_delete_employee_Controller());
+		mappings.put("/admin_main_calendarShow.do", new Admin_main_calendarShow_Controller());
 		
 		mappings.put("/logout.do", new LogoutController());
 		mappings.put("/main.do", new MainController());

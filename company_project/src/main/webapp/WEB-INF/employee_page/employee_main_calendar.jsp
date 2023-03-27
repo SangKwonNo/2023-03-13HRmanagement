@@ -80,6 +80,8 @@
 																				} else {
 																					alert('출근 되었습니다.');
 																				}
+																				window.location
+																						.reload();
 																			}
 																		})
 
@@ -99,6 +101,8 @@
 																				} else {
 																					alert('퇴근 되었습니다.');
 																				}
+																				window.location
+																						.reload();
 																			}
 																		})
 															}

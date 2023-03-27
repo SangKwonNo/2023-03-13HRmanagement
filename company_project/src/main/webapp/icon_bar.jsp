@@ -2,8 +2,8 @@
 	<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 		<c:set var="ctx" value="${pageContext.request.contextPath}" />
 		<!DOCTYPE html>
-		<div class="icon">
-			<ul class="first-list">
+		<div class="icon-ico">
+			<div class="first-listo">
 
 				<c:if test="${sessionScope.id eq 'admin'}">
 					<div class="first-icon" role="" title="정보확인 및 수정" onclick=""></div>
@@ -38,5 +38,5 @@
 				</script>
 
 
-			</ul>
+			</div>
 		</div>
