@@ -21,6 +21,7 @@ public class Admin_main_calendarShow_Controller implements Controller {
 			throws ServletException, IOException {
 
 		HttpSession session = request.getSession();
+		int em_num = Integer.parseInt(request.getParameter("num"));
 		List<Attendance> list = attendanceDAO.getInstance().getList(em_num);
 
 		String json = new Gson().toJson(list);

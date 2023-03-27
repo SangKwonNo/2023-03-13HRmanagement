@@ -30,7 +30,7 @@
 	<div class="conta">
 		<div class="schedulebox"></div>
 		<div class="mai">
-
+	
 
 			<!-- 좌측아이콘 시작 -->
 			<jsp:include page="../../icon_bar.jsp" />

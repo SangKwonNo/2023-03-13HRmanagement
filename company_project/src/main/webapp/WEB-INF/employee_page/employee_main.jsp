@@ -18,7 +18,7 @@
 	<div class="container">
 		<nav></nav>
 		<div class="main">
-
+	
 			<!-- 좌측아이콘 시작 -->
 			<jsp:include page="../../icon_bar.jsp" />
 			<!-- 좌측아이콘 끝 -->

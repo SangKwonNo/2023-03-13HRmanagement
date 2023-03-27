@@ -6,7 +6,6 @@
 			<div class="first-listo">
 
 				<c:if test="${sessionScope.id eq 'admin'}">
-					<div class="first-icon" role="" title="정보확인 및 수정" onclick=""></div>
 					<div class="second-icon" role="img" title="메인화면" onclick="location.href='${ctx}/admin_main.do'">
 					</div>
 					<div class="third-icon" role="img" title="회원리스트"

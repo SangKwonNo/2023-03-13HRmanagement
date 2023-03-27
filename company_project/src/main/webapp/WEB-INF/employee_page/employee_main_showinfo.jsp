@@ -14,7 +14,7 @@
 <body>
 	<div class="container">
 		<div class="main">
-
+	
 			<!-- 좌측 아이콘 시작 -->
 			<jsp:include page="../../icon_bar.jsp" />
 			<!-- 좌측 아이콘 끝 -->
@@ -107,7 +107,6 @@
 									<p>${info.em_job_name}</p>
 								</div>
 							</div>
-							<div class="chatbox"></div>
 						</div>
 					</div>
 				</div>
