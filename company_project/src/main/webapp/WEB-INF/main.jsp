@@ -19,7 +19,8 @@
 <body>
 	<div class="container">
 		<div class="main">
-			<div class="left-container">
+			<div class="left-container"
+				style="border-top-left-radius: 20px; border-bottom-left-radius: 20px;">
 				<svg class="logo" xmlns:mydata="http://www.w3.org/2000/svg"
 					mydata:contrastcolor="3e4532" mydata:template="Contrast"
 					mydata:presentation="2.5" mydata:layouttype="undefined"

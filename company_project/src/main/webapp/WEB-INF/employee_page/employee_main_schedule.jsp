@@ -30,7 +30,7 @@
 	<div class="conta">
 		<div class="schedulebox"></div>
 		<div class="mai">
-	
+
 
 			<!-- 좌측아이콘 시작 -->
 			<jsp:include page="../../icon_bar.jsp" />
@@ -55,83 +55,8 @@
 														right : 'dayGridMonth,timeGridWeek,timeGridDay'
 													},
 													selectable : false,
-													selectMirror : true,
-													select : function(info) { // 버튼 클릭 시 이벤트 추가
-														$("#calendarModal")
-																.modal("show"); // modal 나타내기
-														$(
-																"#calendar_start_date")
-																.html(
-																		info.startStr);
-														$("#addCalendar")
-																.unbind("click");
-														$("#addCalendar")
-																.on(
-																		"click",
-																		function(
-																				event) { // modal의 추가 버튼 클릭 시
-																			var start_date = info.startStr;
-																			var content = $(
-																					"#calendar_content")
-																					.val();
-																			var end_date = $(
-																					"#calendar_end_date")
-																					.val();
+													selectMirror : false,
 
-																			//내용 입력 여부 확인
-																			if (content == null
-																					|| content == "") {
-																				alert("내용을 입력하세요.");
-																			} else if (end_date == "") {
-																				alert("날짜를 입력하세요.");
-																			} else if (new Date(
-																					end_date)
-																					- new Date(
-																							start_date) < 0) { // date 타입으로 변경 후 확인
-																				alert("종료일이 시작일보다 먼저입니다.");
-																			} else { // 정상적인 입력 시
-																				console
-																						.log(start_date);
-																				console
-																						.log(content);
-																				console
-																						.log(info.startStr);
-																				console
-																						.log(end_date);
-																				$
-																						.ajax({
-																							url : '${ctx}/admin_main_addSchedule.do',
-																							type : 'GET',
-																							data : {
-																								"title" : content,
-																								"start" : info.startStr,
-																								"end" : end_date
-																							},
-																							success : function() {
-																								$(
-																										"#calendar_start_date")
-																										.val(
-																												'');
-																								$(
-																										"#calendar_content")
-																										.val(
-																												'');
-																								$(
-																										"#calendar_end_date")
-																										.val(
-																												'');
-																								$(
-																										'#calendarModal')
-																										.modal(
-																												"hide");
-																							},
-																							error : function() {
-																								alert('작성실패');
-																							}
-																						});
-																			}
-																		});
-													},
 													customButtons : {
 
 														myCustomButton : {
@@ -146,25 +71,6 @@
 
 														}
 
-													},
-													eventClick : function(info) {
-														$('#exampleModal')
-																.modal("show");
-														$('#confirm-delete')
-																.unbind("click");
-														$('#confirm-delete')
-																.click(
-																		function(
-																				event) {
-																			// 일정 삭제를 수행합니다.
-																			info.event
-																					.remove();
-																			// 모달 팝업을 닫습니다.
-																			$(
-																					'#exampleModal')
-																					.modal(
-																							"hide");
-																		});
 													},
 													eventRemove : function(info) {
 														// 이벤트를 데이터베이스에서 삭제합니다.
@@ -183,7 +89,7 @@
 																	}
 																});
 													},
-													editable : true, // false로 변경 시 draggable 작동 x 
+													editable : false, // false로 변경 시 draggable 작동 x 
 													displayEventTime : true,
 													locale : 'ko',
 													eventColor : 'gray',
