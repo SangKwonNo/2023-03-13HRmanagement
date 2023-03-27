@@ -71,10 +71,12 @@
 										<div class="box department" id="department" name="department">${vo.em_de_name}</div>
 										<div class="box position" id="position" name="position">${vo.em_rn_name}</div>
 										<div class="box info">
-											<button class="btn-btn-primary" id="attendanceBtn">근태확인<button>
+											<button class="btn-btn-primary" id="attendanceBtn"
+												onclick="clickBtn(this)" value="${vo.em_num}">
+												근태확인
+												<button>
 										</div>
-										<div class="box delete">
-										</div>
+										<div class="box delete"></div>
 									</div>
 								</c:forEach>
 							</div>
@@ -89,45 +91,59 @@
 			<div class="right-container">
 
 				<script type="text/javascript">
-					document.querySelector("#attendanceBtn").addEventListener('click', function() {
+					function clickBtn(data) {
 						var calendarEl = document.getElementById('calendar');
-						calendar = new FullCalendar.Calendar(calendarEl, {
-							timeZone : 'UTC',
-							headerToolbar : {
-								left : 'prev,next today'
-							},
-							selectable : false,
-							selectMirror : true,
-							editable : true, // false로 변경 시 draggable 작동 x 
-							displayEventTime : true,
-							locale : 'ko',
-							eventColor : 'gray',
-							events : function (info, successCallback,
-									failureCallback) {
-								$.ajax({
-									url : '${ctx}/admin_main_calendarShow.do',
-									dataType : 'json',
-									success : function(param) {
-										let events = [];
-										$.each(param, function(index, data) {
-											console.log(data.check_in);
-											console.log(data.check_out);
-											events.push({
-												title : data.memo,
-												start : data.check_in,
-												end : data.check_out,
-												id : data.em_num
-											});
-										});
-										successCallback(events);
-									}
-								});
+						var em_num = data.value;
+						calendar = new FullCalendar.Calendar(
+								calendarEl,
+								{
+									timeZone : 'UTC',
+									headerToolbar : {
+										left : 'prev,next today',
+										right : 'dayGridMonth,timeGridWeek,timeGridDay'
+									},
+									selectable : false,
+									selectMirror : true,
+									editable : true, // false로 변경 시 draggable 작동 x 
+									displayEventTime : true,
+									locale : 'ko',
+									eventColor : 'gray',
+									events : function(info, successCallback,
+											failureCallback) {
+										$
+												.ajax({
+													url : '${ctx}/admin_main_calendarShow.do?num='
+															+ em_num,
+													dataType : 'json',
+													success : function(param) {
+														let events = [];
+														$
+																.each(
+																		param,
+																		function(
+																				index,
+																				data) {
+																			console
+																					.log(data.check_in);
+																			console
+																					.log(data.check_out);
+																			events
+																					.push({
+																						title : data.memo,
+																						start : data.check_in,
+																						end : data.check_out,
+																						id : data.em_num
+																					});
+																		});
+														successCallback(events);
+													}
+												});
 
-							}
-						// 시간 표시 x
-						});
+									}
+								// 시간 표시 x
+								});
 						calendar.render();
-					});
+					};
 				</script>
 
 
