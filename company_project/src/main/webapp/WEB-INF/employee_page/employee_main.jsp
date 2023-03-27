@@ -59,7 +59,21 @@
 				<div class="info2">
 
 					<!-- 메모장 시작 -->
-					<jsp:include page="../../note_bar.jsp" />
+					<div class="note-title">
+						<div class="note-img">
+							<img
+								src="https://cdn-icons-png.flaticon.com/512/2885/2885538.png"
+								alt="">
+						</div>
+						<div class="note-name">메모장</div>
+					</div>
+					<div class="note-content">
+						<textarea class="note-write" rows="10" cols="50" name="contents"
+							id="contents">${e.memo}</textarea>
+						<button class="memoUpdateButton" onClick="memoSave()">메모저장</button>
+						<input name="num" id="num" value="${e.num}" type="hidden" />
+					</div>
+
 					<!-- 메모장 끝 -->
 
 				</div>

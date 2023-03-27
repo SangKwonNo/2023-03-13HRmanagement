@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
 import hrmanagement.MybatisConfig;
+import hrmanagement.vo.Board_01;
 import hrmanagement.vo.Employee;
 
 public class employeeDAO {
@@ -77,4 +78,11 @@ public class employeeDAO {
 		session.delete("mapper.employee.employeeDelete", num);
 		session.close();
 	}
+	
+	public void memoUpdate(Employee e) {
+		SqlSession session = MybatisConfig.getInstance().openSession(true);
+		session.update("mapper.employee.employeeMemoUpdate", e);
+		session.close();
+	}
+	
 }

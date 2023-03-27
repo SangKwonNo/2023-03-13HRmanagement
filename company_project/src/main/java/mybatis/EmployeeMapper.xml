@@ -40,21 +40,31 @@
 	<select id="employeeList" resultMap="employee">
 		select * from employee;
 	</select>
-	
-	<select id="employeeInfo" parameterType="String" resultType="employee"> 
+
+	<select id="employeeInfo" parameterType="String"
+		resultType="employee">
 		select * from employee where id = #{id};
 	</select>
-	
-	<select id="employeeSearch" parameterType="String" resultType="employee">
+
+	<select id="employeeSearch" parameterType="String"
+		resultType="employee">
 		select * from employee where name = #{name};
 	</select>
-	
+
 	<update id="employeeUpdate" parameterType="employee">
-		update employee set name = #{name}, addr = #{addr}, phone = #{phone}, email = #{email} where id = #{id};
+		update employee set
+		name = #{name}, addr = #{addr}, phone = #{phone}, email = #{email}
+		where id = #{id};
 	</update>
-	
+
 	<delete id="employeeDelete" parameterType="Integer">
-		delete from employee where num = #{num};
-		
+		delete from employee
+		where num = #{num};
 	</delete>
+
+	<update id="employeeMemoUpdate" parameterType="employee">
+		update employee set
+		memo = #{memo}
+		where num = #{num};
+	</update>
 </mapper>

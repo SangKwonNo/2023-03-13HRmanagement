@@ -75,7 +75,7 @@
 							<div class="employeeinfo1">
 								<div class="img">
 									<div class="imgBox">
-										<img src="${ctx}/image/profile_${info.num}.jpg" style="width: 100%;">
+										<img src="${ctx}/image/${imgNum}" style="width: 100%;">
 									</div>
 							</div>
 								<div class="infobox">

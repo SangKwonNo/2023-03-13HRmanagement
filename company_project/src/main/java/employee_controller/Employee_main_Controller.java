@@ -6,10 +6,13 @@ import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import admin_controller.Controller;
 import hrmanagement.vo.Board_01;
+import hrmanagement.vo.Employee;
 import model.board_01DAO;
+import model.employeeDAO;
 
 public class Employee_main_Controller implements Controller {
 
@@ -17,7 +20,9 @@ public class Employee_main_Controller implements Controller {
 	public String requestHandler(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		System.out.println("-- Employee_main_Controller --"); // 에러 or 현재접근 위치 확인용 콘솔
-		
+
+		Employee e = new Employee();
+
 		List<Board_01> list = board_01DAO.getInstance().getList();
 		if (list != null) {
 			request.setAttribute("list", list);
@@ -27,9 +32,15 @@ public class Employee_main_Controller implements Controller {
 		if (request.getParameter("id") != null) {
 			log = Integer.parseInt(request.getParameter("id"));
 		}
-		Board_01 board = list.get(log-1);
+
+		HttpSession session = request.getSession();
+		String id = (String) session.getAttribute("id");
+		e = employeeDAO.getInstance().getVo(id);
+
+		Board_01 board = list.get(log - 1);
 		request.setAttribute("board", board);
-		
+		request.setAttribute("e", e);
+
 		return "/employee_page/employee_main";
 
 	}

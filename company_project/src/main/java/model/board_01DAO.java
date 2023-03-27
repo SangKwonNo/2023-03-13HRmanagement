@@ -39,5 +39,4 @@ public class board_01DAO {
 		session.update("mapper.board_01.BoardUpdate", b);
 		session.close();
 	}
-
 }

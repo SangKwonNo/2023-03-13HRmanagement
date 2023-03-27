@@ -22,8 +22,13 @@ public class Employee_main_update_Controller implements Controller {
 
 		Employee e = employeeDAO.getInstance().getVo(log);
 		request.setAttribute("loginEmployee", e);
-		return "/employee_page/employee_main_update";
 
+		String imgNum = "profile_" + e.getNum() + ".JPG";
+		System.out.println(imgNum);
+
+		request.setAttribute("imgNum", imgNum);
+
+		return "/employee_page/employee_main_update";
 	}
 
 }

@@ -102,15 +102,9 @@
 							<div class="employeeinfo1">
 								<div class="img">
 									<div class="imgBox">
-										<img src="${ctx}/image/profile_1.JPG" style="width: 100%;">
-										<!-- 전페이지에서가져오기 -->							
+										<img src="${ctx}/image/${imgNum}" style="width: 100%;">
+										<!-- 전페이지에서가져오기 -->
 									</div>
-									<form id="imgForm" action="upload.do" method="post"
-										enctype="multipart/form-data">
-										<input type="file" class="profileUpload" onchange="update()"
-											id="formFile" type="file" name="uploadFile" accept=" .jpg" value="변경"/>
-											
-									</form>
 								</div>
 								<div class="infobox">
 									<div class="paddingLeft">${info.name}

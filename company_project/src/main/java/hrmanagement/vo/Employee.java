@@ -17,9 +17,18 @@ public class Employee {
 	private String em_entry;
 	private int va_total;
 	private int va_use;
+	private String memo;
 
 	public int getNum() {
 		return num;
+	}
+
+	public String getMemo() {
+		return memo;
+	}
+
+	public void setMemo(String memo) {
+		this.memo = memo;
 	}
 
 	public void setNum(int num) {

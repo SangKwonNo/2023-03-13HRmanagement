@@ -164,8 +164,13 @@ a {
 
 .note-content {
 	width: 100%;
-	height: 85%;
+	height: 90%;
 	padding: 20px 10px 20px 10px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .note-title {
@@ -208,9 +213,11 @@ a {
 
 .note-write {
 	width: 100%;
-	height: 100%;
+	height: 85%;
 	border: 2px solid rgba(0, 0, 0, 0.253);
 	border-radius: 15px;
+		
+	padding: 15px;
 }
 
 .right-board-container {
@@ -277,3 +284,10 @@ a {
 	width: 80px;
 	height: 35px;
 }
+
+.memoUpdateButton{
+	margin-top: 10px;
+	width: 80px;
+	height: 35px;
+}
+

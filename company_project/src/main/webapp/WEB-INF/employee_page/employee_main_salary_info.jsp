@@ -215,7 +215,7 @@
 					<div class="payStubMain3">
 						<!-- tr div start -->
 						<div class="pSMain3-1">
-							OO 회사 <br> 대표이사 OOO<br> <br>
+							OO 회사 <br> 대표이사 노상권<br> <br>
 							<div class="pSMain3-2">출력날짜 : ${today}</div>
 						</div>
 

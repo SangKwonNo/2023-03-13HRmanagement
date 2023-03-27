@@ -25,6 +25,12 @@ public class Employee_main_show_info_Controller implements Controller {
 		System.out.println("info" + info);
 		System.out.println("id" + log);
 		request.setAttribute("info", info);
+		
+		String imgNum = "profile_" + info.getNum() + ".JPG";
+		System.out.println(imgNum);
+
+		request.setAttribute("imgNum", imgNum);
+		
 		return "/employee_page/employee_main_showinfo";
 	}
 
