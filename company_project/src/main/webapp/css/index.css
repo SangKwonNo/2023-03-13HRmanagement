@@ -30,6 +30,8 @@ body {
 		hsla(305, 75%, 83%, 1) 100%);
 	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#979A74",
 		endColorstr="#F2F3E2", GradientType=1);
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
 }
 
 .conta {
@@ -39,19 +41,16 @@ body {
 	align-items: center;
 	position: relative;
 	width: 100%;
-	height: 95%;
+	height: 100%;
 }
 
 .conta::before {
 	width: 100%;
-	height: 95%;
+	height: 100%;
 	content: "";
 	display: block;
 	position: absolute;
-	width: 100%;
-	height: 100%;
 	z-index: -1;
-	background-image: url("이미지_경로.jpg");
 	filter: grayscale(100%);
 	background-image:
 		url('https://smashinglogo.com/v3/envision/image.jpg?id=310b57b4-5e8b-43a4-b3b5-378d08ed4fc0&format=desktop');
@@ -61,13 +60,11 @@ body {
 		drop-shadow(2px -1px 5px #000000);
 	-moz-filter: grayscale(61%) sepia(60%) blur(10px) brightness(56%)
 		drop-shadow(2px -1px 5px #000000);
-	position: absolute;
-	z-index: -1;
 }
 
 .container::before {
 	width: 100%;
-	height: 95%;
+	height: 100%;
 	content: "";
 	display: block;
 	z-index: -1;
@@ -89,7 +86,7 @@ body {
 	align-items: center;
 	position: relative;
 	width: 100%;
-	height: 95%;
+	height: 100%;
 	flex-flow: nowrap column;
 }
 
@@ -99,6 +96,11 @@ body {
 	height: 90%;
 	display: flex;
 	flex-flow: nowrap row;
+	border: 4px solid #bbb;
+	border-style: inset;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-radius: 20px;
 }
 
 .mai {
@@ -107,16 +109,19 @@ body {
 	height: 90%;
 	display: flex;
 	flex-flow: nowrap row;
+	border: 4px solid #bbb;
+	border-style: inset;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-radius: 20px;
 }
 
 .first-listo {
-	width: 100%;
-	height: 100%;
+	width: 75%;
+	height: 95%;
 	display: flex;
 	flex-flow: wrap column;
 	align-items: center;
-	border-radius: 20px;
-	justify-content: center;
 }
 
 .first-icon {
@@ -127,8 +132,8 @@ body {
 	text-decoration: none;
 	font-style: none;
 	list-style: none;
-	width: 60px;
-	height: 60px;
+	width: 50px;
+	height: 50px;
 	border-radius: 50%;
 	margin-bottom: 20px;
 	display: flex;
@@ -139,29 +144,14 @@ body {
 .icon-ico {
 	width: 100px;
 	height: 100%;
-	position: relative;
-}
-
-.icon-ico::before {
+	background: #aaa;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
-	background-image:
-		url('https://img.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg?w=2000');
-	width: 100px;
-	height: 100%;
-	content: "";
-	display: block;
-	z-index: -1;
-	position: absolute;
-	filter: blur(0px) brightness(102%) opacity(71%);
-	-webkit-filter: blur(0px) brightness(102%) opacity(71%);
-	-moz-filter: blur(0px) brightness(102%) opacity(71%);
-}
-
-.last-icon {
-	margin-top: auto;
-	position: relative;
-	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-right: 4px solid #bbb;
+	border-style: inset;
 }
 
 .right-container {
@@ -173,6 +163,8 @@ body {
 	align-items: center;
 	position: relative;
 	z-index: 100;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
 }
 
 .form {
@@ -196,11 +188,6 @@ body {
 	display: flex;
 	flex-flow: nowrap column;
 	align-items: center;
-}
-
-footer {
-	width: 100%;
-	height: 5%;
 }
 
 .login-title {
@@ -311,4 +298,6 @@ footer {
 .last-icon {
 	background-image: url('../image/icon_06.png');
 	background-size: cover;
+	position: relavtive;
+	margin-top: auto;
 }
