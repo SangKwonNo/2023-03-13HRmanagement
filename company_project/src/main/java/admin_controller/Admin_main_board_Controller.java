@@ -19,9 +19,11 @@ public class Admin_main_board_Controller implements Controller {
 			throws ServletException, IOException {
 		System.out.println("-- Admin_main_board_Controller --"); // 에러 or 현재접근 위치 확인용 콘솔
 
-		int num = Integer.parseInt(request.getParameter("num"));
+		int num = Integer.parseInt(request.getParameter("num2"));
 		String subject = request.getParameter("subject");
-		String contents = request.getParameter("contents");
+		String contents = request.getParameter("contents2");
+		
+		System.out.println(num +"  "+subject+"  "+contents );
 		
 		board_01DAO.getInstance().BoardUpdate(num, subject, contents);
 		

@@ -76,13 +76,13 @@
 			<!-- 오른쪽 메인화면 시작 -->
 			<div class="right-container">
 				<div class="right-board-container">
-					<input class="right-board-title" type="hidden" name="num" id="num"
+					<input class="right-board-title" type="hidden" name="num2" id="num2"
 						value="${board.num}"> <input class="right-board-title"
 						type="text" name="subject" id="subject" value="${board.subject}">
 					<input class="right-board-date" type="text" name="regDate"
 						id="regDate" value="${board.regDate}">
 					<textarea class="right-board-content" rows="10" cols="50"
-						name="contents" id="contents">${board.contents}</textarea>
+						name="contents2" id="contents2">${board.contents}</textarea>
 					<button class="updateButton" onClick="showConfirm()">수정</button>
 				</div>
 			</div>

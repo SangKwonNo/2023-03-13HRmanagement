@@ -17,8 +17,8 @@ function showConfirm() {
 
 function updateBoard() {
 	var subject = $("#subject").val();
-	var num = $("#num").val();
-	var contents = $("#contents").val();
+	var num2 = $("#num2").val();
+	var contents2 = $("#contents2").val();
 
 	console.log("(2/3)updateBoard 접근")
 
@@ -27,8 +27,8 @@ function updateBoard() {
 		method: "POST",
 		data: {
 			subject: subject,
-			num: num,
-			contents: contents
+			num2: num2,
+			contents2: contents2
 		},
 		success: function(response) {
 			console.log("(3/3)success 접근")
