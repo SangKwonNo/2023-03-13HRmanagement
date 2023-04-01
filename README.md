@@ -1,2 +1,1 @@
-# HR_management
-5_Team_Project
+사내회원 관리 프로젝트 ( 2인 1조 )
